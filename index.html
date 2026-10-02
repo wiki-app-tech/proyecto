@@ -3,103 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio profesional de fotografía, comunicación institucional y producción audiovisual.">
-  <title>Tu Nombre | Portfolio</title>
 
-  <link rel="stylesheet" href="css/estilos.css">
-</head>
+  <meta
+    name="description"
+    content="Wiki App Tech: recursos, guías y proyectos tecnológicos en un solo lugar."
+  >
 
-<body>
-  <header class="encabezado">
-    <div class="contenedor navegacion">
-      <a class="logo" href="index.html">sas</a>
+  <title>Wiki App Tech | Recursos y proyectos</title>
 
-      <nav aria-label="Navegación principal">
-        <ul class="menu">
-          <li><a class="activo" href="index.html">Inicio</a></li>
-          <li><a href="proyectos.html">Proyectos</a></li>
-          <li><a href="sobre-mi.html">Sobre mí</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <style>
+    :root {
+      --fondo: #07111f;
+      --fondo-secundario: #0c1b2d;
+      --tarjeta: rgba(16, 35, 56, 0.78);
+      --tarjeta-hover: rgba(23, 52, 82, 0.98);
+      --texto: #edf5ff;
+      --texto-secundario: #a9bdd3;
+      --acento: #4fd1c5;
+      --acento-2: #6d8cff;
+      --acento-3: #ffbf69;
+      --borde: rgba(177, 210, 242, 0.15);
+      --sombra: 0 20px 45px rgba(0, 0, 0, 0.28);
+      --radio: 22px;
+      --ancho: 1240px;
+    }
 
-  <main>
-    <section class="portada">
-      <div class="contenedor">
-        <p class="etiqueta">FOTOGRAFÍA · COMUNICACIÓN · SEGURIDAD</p>
+    * {
+      box-sizing: border-box;
+    }
 
-        <h1>Comunicación visual clara para proyectos institucionales y territoriales.</h1>
+    html {
+      scroll-behavior: smooth;
+    }
 
-        <p class="bajada">
-          Portfolio de fotografía, producción audiovisual, comunicación pública,
-          seguridad y proyectos digitales.
-        </p>
+    body {
+      min-width: 320px;
+      margin: 0;
+      overflow-x: hidden;
+      color: var(--texto);
+      background:
+        radial-gradient(circle at 8% 0%, rgba(79, 209, 197, 0.15), transparent 28%),
+        radial-gradient(circle at 93% 10%, rgba(109, 140, 255, 0.18), transparent 30%),
+        linear-gradient(145deg, #06101c 0%, #09182a 52%, #07101c 100%);
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
 
-        <a class="boton" href="proyectos.html">Ver proyectos</a>
-      </div>
-    </section>
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-    <section class="seccion contenedor">
-      <div class="titulo-seccion">
-        <p class="etiqueta">DESTACADOS</p>
-        <h2>Proyectos seleccionados</h2>
-      </div>
+    button,
+    input {
+      font: inherit;
+    }
 
-      <div class="grilla-proyectos">
-        <article class="tarjeta">
-          <img src="assets/img/proyecto-seguridad.jpg"
-               alt="Cobertura visual de operativo de seguridad">
+    .contenedor {
+      width: min(92%, var(--ancho));
+      margin: 0 auto;
+    }
 
-          <div class="tarjeta-contenido">
-            <p class="categoria">SEGURIDAD PÚBLICA</p>
-            <h3>Comunicación institucional</h3>
-            <p>
-              Registro visual y desarrollo de contenidos para informar
-              acciones de prevención, emergencias y servicios públicos.
-            </p>
-            <a href="proyectos/prevencion-y-seguridad/">Ver proyecto →</a>
-          </div>
-        </article>
+    .encabezado {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid rgba(177, 210, 242, 0.1);
+      background: rgba(7, 17, 31, 0.76);
+      backdrop-filter: blur(18px);
+    }
 
-        <article class="tarjeta">
-          <img src="assets/img/proyecto-audiovisual.jpg"
-               alt="Producción audiovisual institucional">
+    .barra-superior {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 74px;
+      gap: 24px;
+    }
 
-          <div class="tarjeta-contenido">
-            <p class="categoria">AUDIOVISUAL</p>
-            <h3>Producción de contenidos</h3>
-            <p>
-              Fotografía, edición y narrativa audiovisual para medios,
-              organismos e iniciativas comunitarias.
-            </p>
-            <a href="proyectos/audiovisuales/">Ver proyecto →</a>
-          </div>
-        </article>
+    .marca {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      min-width: max-content;
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
 
-        <article class="tarjeta">
-          <img src="assets/img/proyecto-fotografia.jpg"
-               alt="Fotografía documental de paisaje patagónico">
-
-          <div class="tarjeta-contenido">
-            <p class="categoria">FOTOGRAFÍA</p>
-            <h3>Territorio y montaña</h3>
-            <p>
-              Fotografía documental, paisaje, actividad de montaña y
-              construcción de identidad visual territorial.
-            </p>
-            <a href="proyectos/fotografia/">Ver proyecto →</a>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="pie">
-    <div class="contenedor">
-      <p>© 2026 S.A.S. Portfolio profesional.</p>
-    </div>
-  </footer>
-</body>
-</html>
+    .marca-icono {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      bo
