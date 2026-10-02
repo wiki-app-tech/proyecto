@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio profesional de fotografía, comunicación institucional y producción audiovisual.">
+  <title>Tu Nombre | Portfolio</title>
 
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <header class="encabezado">
+    <div class="contenedor navegacion">
+      <a class="logo" href="index.html">TU NOMBRE</a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a class="activo" href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="portada">
+      <div class="contenedor">
+        <p class="etiqueta">FOTOGRAFÍA · COMUNICACIÓN · SEGURIDAD</p>
+
+        <h1>Comunicación visual clara para proyectos institucionales y territoriales.</h1>
+
+        <p class="bajada">
+          Portfolio de fotografía, producción audiovisual, comunicación pública,
+          seguridad y proyectos digitales.
+        </p>
+
+        <a class="boton" href="proyectos.html">Ver proyectos</a>
+      </div>
+    </section>
+
+    <section class="seccion contenedor">
+      <div class="titulo-seccion">
+        <p class="etiqueta">DESTACADOS</p>
+        <h2>Proyectos seleccionados</h2>
+      </div>
+
+      <div class="grilla-proyectos">
+        <article class="tarjeta">
+          <img src="assets/img/proyecto-seguridad.jpg"
+               alt="Cobertura visual de operativo de seguridad">
+
+          <div class="tarjeta-contenido">
+            <p class="categoria">SEGURIDAD PÚBLICA</p>
+            <h3>Comunicación institucional</h3>
+            <p>
+              Registro visual y desarrollo de contenidos para informar
+              acciones de prevención, emergencias y servicios públicos.
+            </p>
+            <a href="proyectos/prevencion-y-seguridad/">Ver proyecto →</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <img src="assets/img/proyecto-audiovisual.jpg"
+               alt="Producción audiovisual institucional">
+
+          <div class="tarjeta-contenido">
+            <p class="categoria">AUDIOVISUAL</p>
+            <h3>Producción de contenidos</h3>
+            <p>
+              Fotografía, edición y narrativa audiovisual para medios,
+              organismos e iniciativas comunitarias.
+            </p>
+            <a href="proyectos/audiovisuales/">Ver proyecto →</a>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <img src="assets/img/proyecto-fotografia.jpg"
+               alt="Fotografía documental de paisaje patagónico">
+
+          <div class="tarjeta-contenido">
+            <p class="categoria">FOTOGRAFÍA</p>
+            <h3>Territorio y montaña</h3>
+            <p>
+              Fotografía documental, paisaje, actividad de montaña y
+              construcción de identidad visual territorial.
+            </p>
+            <a href="proyectos/fotografia/">Ver proyecto →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p>© 2026 Tu Nombre. Portfolio profesional.</p>
+    </div>
+  </footer>
+</body>
+</html>
