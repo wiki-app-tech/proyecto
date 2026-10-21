@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 44, 102, 0.85)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.85)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+  </defs>
+  
+  
+  <!-- Background -->
+  <rect width="1200" height="680" fill="url(#bgGrad)"/>
+  <rect width="1200" height="680" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="1160" height="640" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="1140" height="620" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 70 L 1160 40 L 1130 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 610 L 40 640 L 70 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 610 L 1160 640 L 1130 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header -->
+  <g transform="translate(600, 60)" text-anchor="middle">
+    <rect x="-190" y="-18" width="380" height="26" rx="13" fill="#002C66" stroke="#004DB3" stroke-width="1.2"/>
+    <text x="0" y="-1" fill="#FFB515" font-size="11" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2">
+      POLICÍA DE TIERRA DEL FUEGO • MEDICINA TÁCTICA OPERACIONAL
+    </text>
+    <text x="0" y="28" fill="#ffffff" font-size="21" font-family="'Outfit', sans-serif" font-weight="900" letter-spacing="1">
+      CADENA DE SUPERVIVENCIA TÁCTICA EN CUSTODIA (TECC)
+    </text>
+    <text x="0" y="47" fill="#94a3b8" font-size="12.5" font-family="'Inter', sans-serif">
+      Tactical Emergency Casualty Care adaptado al Dignatario y Equipo de Escolta
+    </text>
+  </g>
+  
+
+  <!-- 4 Step Sequential Process -->
+  <g transform="translate(48, 140)">
+    <!-- ESLABÓN 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="260" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="260" height="52" rx="12" fill="#003273"/>
+      <text x="130" y="24" fill="#FFB515" font-size="11.5" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">FASE 1 (CUF)</text>
+      <text x="130" y="42" fill="#ffffff" font-size="12" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">BAJO FUEGO DIRECTO</text>
+
+      <circle cx="130" cy="95" r="28" fill="#002C66" stroke="#FFB515" stroke-width="2"/>
+      <text x="130" y="103" fill="#FFB515" font-size="20" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">01</text>
+
+      <g transform="translate(18, 145)" font-family="'Inter', sans-serif" font-size="11" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#FFB515">• Prioridad Táctica Absoluta:</text>
+        <text y="18" fill="#cbd5e1" font-size="10.5">Neutralizar la agresión o romper contacto de inmediato.</text>
+
+        <text y="50" font-weight="700" fill="#FFB515">• Intervención Médica Única:</text>
+        <text y="68" fill="#cbd5e1" font-size="10.5">Torniquete táctico (CAT / SOFTT) alto y apretado en hemorragias.</text>
+
+        <text y="102" font-weight="700" fill="#FFB515">• Escudo Humano y Repliegue:</text>
+        <text y="120" fill="#cbd5e1" font-size="10.5">Mover al VIP de la zona de muerte a cobertura balística.</text>
+
+        <rect x="0" y="150" width="224" height="155" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="10" y="172" fill="#FFB515" font-size="11" font-weight="700">Regla de Oro TECC:</text>
+        <text x="10" y="192" fill="#e2e8f0" font-size="10.5">"El mejor médico táctico</text>
+        <text x="10" y="208" fill="#e2e8f0" font-size="10.5">en la Fase 1 es la</text>
+        <text x="10" y="224" fill="#e2e8f0" font-size="10.5">superioridad de fuego</text>
+        <text x="10" y="240" fill="#e2e8f0" font-size="10.5">y la evacuación veloz."</text>
+      </g>
+    </g>
+
+    <!-- Connector Arrow 1 -> 2 -->
+    <path d="M 264 235 L 278 235" stroke="#FFB515" stroke-width="3" marker-end="url(#arrowGold)"/>
+
+    <!-- ESLABÓN 2 -->
+    <g transform="translate(282, 0)">
+      <rect width="260" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="260" height="52" rx="12" fill="#003273"/>
+      <text x="130" y="24" fill="#FFB515" font-size="11.5" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">FASE 2 (TFC)</text>
+      <text x="130" y="42" fill="#ffffff" font-size="12" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">EN COBERTURA TÁCTICA</text>
+
+      <circle cx="130" cy="95" r="28" fill="#002C66" stroke="#0069F2" stroke-width="2"/>
+      <text x="130" y="103" fill="#0069F2" font-size="20" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">02</text>
+
+      <g transform="translate(18, 145)" font-family="'Inter', sans-serif" font-size="11" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#0069F2">• Protocolo M.A.R.C.H.:</text>
+        <text y="18" fill="#cbd5e1" font-size="10.5">M: Hemostáticos y vendaje israelí en heridas de unión.</text>
+
+        <text y="50" font-weight="700" fill="#0069F2">• Vía Aérea y Tórax:</text>
+        <text y="68" fill="#cbd5e1" font-size="10.5">A: Cánula nasofaríngea.<br/>R: Parche torácico con válvula.</text>
+
+        <text y="102" font-weight="700" fill="#0069F2">• Prevención de Hipotermia:</text>
+        <text y="120" fill="#cbd5e1" font-size="10.5">Manta térmica aluminizada (crítica en Tierra del Fuego).</text>
+
+        <rect x="0" y="150" width="224" height="155" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="10" y="172" fill="#0069F2" font-size="11" font-weight="700">Entorno Seguro:</text>
+        <text x="10" y="192" fill="#e2e8f0" font-size="10.5">Se trabaja al abrigo de un</text>
+        <text x="10" y="208" fill="#e2e8f0" font-size="10.5">muro o en el habitáculo</text>
+        <text x="10" y="224" fill="#e2e8f0" font-size="10.5">del vehículo blindado</text>
+        <text x="10" y="240" fill="#e2e8f0" font-size="10.5">mientras se organiza fuga.</text>
+      </g>
+    </g>
+
+    <!-- Connector Arrow 2 -> 3 -->
+    <path d="M 546 235 L 560 235" stroke="#FFB515" stroke-width="3" marker-end="url(#arrowGold)"/>
+
+    <!-- ESLABÓN 3 -->
+    <g transform="translate(564, 0)">
+      <rect width="260" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="260" height="52" rx="12" fill="#003273"/>
+      <text x="130" y="24" fill="#FFB515" font-size="11.5" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">FASE 3 (TACEVAC)</text>
+      <text x="130" y="42" fill="#ffffff" font-size="12" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">EVACUACIÓN TÁCTICA</text>
+
+      <circle cx="130" cy="95" r="28" fill="#002C66" stroke="#FFB515" stroke-width="2"/>
+      <text x="130" y="103" fill="#FFB515" font-size="20" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">03</text>
+
+      <g transform="translate(18, 145)" font-family="'Inter', sans-serif" font-size="11" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#FFB515">• Enlace Pre-Hospitalario:</text>
+        <text y="18" fill="#cbd5e1" font-size="10.5">Transmisión radial encriptada del reporte M.I.S.T.</text>
+
+        <text y="50" font-weight="700" fill="#FFB515">• Reevaluación Constante:</text>
+        <text y="68" fill="#cbd5e1" font-size="10.5">Chequeo de sangrados, pulsos y ventilación cada 3 min.</text>
+
+        <text y="102" font-weight="700" fill="#FFB515">• Ruta Sanitaria Prioritaria:</text>
+        <text y="120" fill="#cbd5e1" font-size="10.5">Desplazamiento escoltado hacia el Hospital designado.</text>
+
+        <rect x="0" y="150" width="224" height="155" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="10" y="172" fill="#FFB515" font-size="11" font-weight="700">Reporte M.I.S.T.:</text>
+        <text x="10" y="192" fill="#e2e8f0" font-size="10.5">M - Mecanismo de lesión</text>
+        <text x="10" y="208" fill="#e2e8f0" font-size="10.5">I - Lesión identificada</text>
+        <text x="10" y="224" fill="#e2e8f0" font-size="10.5">S - Signos vitales actuales</text>
+        <text x="10" y="240" fill="#e2e8f0" font-size="10.5">T - Tratamientos dados</text>
+      </g>
+    </g>
+
+    <!-- Connector Arrow 3 -> 4 -->
+    <path d="M 828 235 L 842 235" stroke="#FFB515" stroke-width="3" marker-end="url(#arrowGold)"/>
+
+    <!-- ESLABÓN 4 -->
+    <g transform="translate(846, 0)">
+      <rect width="260" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="260" height="52" rx="12" fill="#003273"/>
+      <text x="130" y="24" fill="#FFB515" font-size="11.5" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">FASE 4 (HOSPITAL)</text>
+      <text x="130" y="42" fill="#ffffff" font-size="12" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">TRANSFERENCIA MÉDICA</text>
+
+      <circle cx="130" cy="95" r="28" fill="#002C66" stroke="#0069F2" stroke-width="2"/>
+      <text x="130" y="103" fill="#0069F2" font-size="20" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">04</text>
+
+      <g transform="translate(18, 145)" font-family="'Inter', sans-serif" font-size="11" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#0069F2">• Arribo a Shock-Room:</text>
+        <text y="18" fill="#cbd5e1" font-size="10.5">Acceso directo sin burocracia por puerta de trauma.</text>
+
+        <text y="50" font-weight="700" fill="#0069F2">• Cordón de Seguridad:</text>
+        <text y="68" fill="#cbd5e1" font-size="10.5">La cápsula toma control perimétrico del quirófano.</text>
+
+        <text y="102" font-weight="700" fill="#0069F2">• Custodia de Evidencias:</text>
+        <text y="120" fill="#cbd5e1" font-size="10.5">Preservación de prendas y proyectiles con cadena legal.</text>
+
+        <rect x="0" y="150" width="224" height="155" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="10" y="172" fill="#0069F2" font-size="11" font-weight="700">Continuidad Operativa:</text>
+        <text x="10" y="192" fill="#e2e8f0" font-size="10.5">El Jefe de Custodia nunca</text>
+        <text x="10" y="208" fill="#e2e8f0" font-size="10.5">abandona al mandatario</text>
+        <text x="10" y="224" fill="#e2e8f0" font-size="10.5">durante la intervención</text>
+        <text x="10" y="240" fill="#e2e8f0" font-size="10.5">médica de emergencia.</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="960" viewBox="0 0 1200 960">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="50%" stop-color="#002C66"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFEAA7"/>
+      <stop offset="100%" stop-color="#FFB515"/>
+    </linearGradient>
+    <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(0, 105, 242, 0.15)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0069F2" />
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#FFB515" />
+    </marker>
+  </defs>
+
+  <rect width="1200" height="960" fill="url(#bg)"/>
+  <rect width="1200" height="960" fill="url(#gridPattern)"/>
+  <rect x="20" y="20" width="1160" height="920" rx="16" fill="none" stroke="#004DB3" stroke-width="2"/>
+
+  <!-- Header -->
+  <rect x="20" y="20" width="1160" height="74" fill="rgba(0, 31, 72, 0.9)" border-radius="16"/>
+  <text x="600" y="55" fill="#FFB515" font-size="24" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="2">
+    FORMACIONES DE CUSTODIA Y PROTECCIÓN CERCANA (ESCOLTA VIP)
+  </text>
+  <text x="600" y="78" fill="#cbd5e1" font-size="13" font-family="'Inter', sans-serif" font-weight="500" text-anchor="middle">
+    Geometría Defensiva Doctrinal • Coberturas Hemisféricas y Cápsula en Diamante • Policía de Tierra del Fuego
+  </text>
+  <line x1="20" y1="94" x2="1180" y2="94" stroke="#FFB515" stroke-width="2"/>
+
+  <!-- PANEL 1: ESCOLTA INDIVIDUAL -->
+  <g transform="translate(40, 120)">
+    <rect width="360" height="380" rx="12" fill="rgba(0, 50, 115, 0.5)" stroke="#004DB3" stroke-width="1.5"/>
+    <rect x="0" y="0" width="360" height="38" rx="12" fill="#003273"/>
+    <text x="180" y="24" fill="#FFB515" font-size="13" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">
+      1. ESCOLTA INDIVIDUAL (360°)
+    </text>
+
+    <!-- Visual Diagram -->
+    <circle cx="180" cy="190" r="105" fill="none" stroke="#0069F2" stroke-width="2" stroke-dasharray="6,4"/>
+    <circle cx="180" cy="190" r="75" fill="rgba(0, 105, 242, 0.15)" stroke="#0069F2" stroke-width="1.5"/>
+    
+    <!-- VIP -->
+    <circle cx="180" cy="190" r="18" fill="#FFB515" stroke="#ffffff" stroke-width="2"/>
+    <text x="180" y="195" fill="#000000" font-size="11" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">VIP</text>
+
+    <!-- Escort -->
+    <circle cx="130" cy="235" r="16" fill="#0069F2" stroke="#ffffff" stroke-width="2"/>
+    <text x="130" y="239" fill="#ffffff" font-size="9" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">E1</text>
+
+    <!-- Sector Arrow 360 -->
+    <path d="M 120 120 A 90 90 0 1 1 240 120" fill="none" stroke="#FFB515" stroke-width="2" marker-end="url(#arrowGold)"/>
+    <text x="180" y="105" fill="#FFB515" font-size="11" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">
+      COBERTURA TOTAL 360°
+    </text>
+
+    <!-- Notes -->
+    <rect x="15" y="315" width="330" height="52" rx="6" fill="#001a40" stroke="#004DB3" stroke-width="1"/>
+    <text x="25" y="333" fill="#ffffff" font-size="10.5" font-family="'Inter', sans-serif">• Riesgo bajo / actividades de protocolo íntimo.</text>
+    <text x="25" y="351" fill="#cbd5e1" font-size="10.5" font-family="'Inter', sans-serif">• El custodio asume todo el arco perimétrico.</text>
+  </g>
+
+  <!-- PANEL 2: DOS ESCOLTAS -->
+  <g transform="translate(420, 120)">
+    <rect width="360" height="380" rx="12" fill="rgba(0, 50, 115, 0.5)" stroke="#004DB3" stroke-width="1.5"/>
+    <rect x="0" y="0" width="360" height="38" rx="12" fill="#003273"/>
+    <text x="180" y="24" fill="#FFB515" font-size="13" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">
+      2. DOS ESCOLTAS (SECTORES 180°)
+    </text>
+
+    <!-- Visual Diagram -->
+    <line x1="80" y1="190" x2="280" y2="190" stroke="rgba(255, 181, 21, 0.4)" stroke-width="2" stroke-dasharray="4,4"/>
+    <path d="M 90 190 A 90 90 0 0 1 270 190" fill="rgba(0, 105, 242, 0.15)" stroke="#0069F2" stroke-width="2"/>
+    <path d="M 270 190 A 90 90 0 0 1 90 190" fill="rgba(255, 181, 21, 0.1)" stroke="#FFB515" stroke-width="2"/>
+
+    <!-- VIP -->
+    <circle cx="180" cy="190" r="18" fill="#FFB515" stroke="#ffffff" stroke-width="2"/>
+    <text x="180" y="195" fill="#000000" font-size="11" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">VIP</text>
+
+    <!-- Escort 1 (Vanguardia) -->
+    <circle cx="180" cy="120" r="16" fill="#0069F2" stroke="#ffffff" stroke-width="2"/>
+    <text x="180" y="124" fill="#ffffff" font-size="9" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">E1</text>
+    <text x="180" y="102" fill="#0069F2" font-size="10" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">Sector Frontal (180°)</text>
+
+    <!-- Escort 2 (Retaguardia) -->
+    <circle cx="180" cy="260" r="16" fill="#0069F2" stroke="#ffffff" stroke-width="2"/>
+    <text x="180" y="264" fill="#ffffff" font-size="9" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">E2</text>
+    <text x="180" y="292" fill="#FFB515" font-size="10" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">Sector Posterior (180°)</text>
+
+    <!-- Notes -->
+    <rect x="15" y="315" width="330" height="52" rx="6" fill="#001a40" stroke="#004DB3" stroke-width="1"/>
+    <text x="25" y="333" fill="#ffffff" font-size="10.5" font-family="'Inter', sans-serif">• Desplazamientos rutinarios de riesgo medio.</text>
+    <text x="25" y="351" fill="#cbd5e1" font-size="10.5" font-family="'Inter', sans-serif">• División en dos hemisferios complementarios.</text>
+  </g>
+
+  <!-- PANEL 3: TRES ESCOLTAS (TRIÁNGULO) -->
+  <g transform="translate(800, 120)">
+    <rect width="360" height="380" rx="12" fill="rgba(0, 50, 115, 0.5)" stroke="#004DB3" stroke-width="1.5"/>
+    <rect x="0" y="0" width="360" height="38" rx="12" fill="#003273"/>
+    <text x="180" y="24" fill="#FFB515" font-size="13" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">
+      3. TRES ESCOLTAS (CUÑA / 120°)
+    </text>
+
+    <!-- Triangulation -->
+    <polygon points="180,110 90,260 270,260" fill="rgba(0, 105, 242, 0.15)" stroke="#0069F2" stroke-width="2"/>
+
+    <!-- VIP Center -->
+    <circle cx="180" cy="205" r="18" fill="#FFB515" stroke="#ffffff" stroke-width="2"/>
+    <text x="180" y="210" fill="#000000" font-size="11" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">VIP</text>
+
+    <!-- E1 Vanguardia -->
+    <circle cx="180" cy="110" r="16" fill="#0069F2" stroke="#ffffff" stroke-width="2"/>
+    <text x="180" y="114" fill="#ffffff" font-size="9" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">E1</text>
+
+    <!-- E2 Flanco Izq -->
+    <circle cx="90" cy="260" r="16" fill="#0069F2" stroke="#ffffff" stroke-width="2"/>
+    <text x="90" y="264" fill="#ffffff" font-size="9" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">E2</text>
+
+    <!-- E3 Flanco Der -->
+    <circle cx="270" cy="260" r="16" fill="#0069F2" stroke="#ffffff" stroke-width="2"/>
+    <text x="270" y="264" fill="#ffffff" font-size="9" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">E3</text>
+
+    <text x="180" y="85" fill="#FFB515" font-size="10" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">Triangulación de Sectores (120° c/u)</text>
+
+    <!-- Notes -->
+    <rect x="15" y="315" width="330" height="52" rx="6" fill="#001a40" stroke="#004DB3" stroke-width="1"/>
+    <text x="25" y="333" fill="#ffffff" font-size="10.5" font-family="'Inter', sans-serif">• Formación en V o Cuña para penetración.</text>
+    <text x="25" y="351" fill="#cbd5e1" font-size="10.5" font-family="'Inter', sans-serif">• Abre paso eficaz en zonas concurridas.</text>
+  </g>
+
+  <!-- PANEL 4: FORMACIÓN COMPLETA EN DIAMANTE (PANEL INFERIOR GRANDE) -->
+  <g transform="translate(40, 520)">
+    <rect width="1120" height="400" rx="14" fill="rgba(0, 31, 72, 0.75)" stroke="#FFB515" stroke-width="2"/>
+    <rect x="0" y="0" width="1120" height="42" rx="14" fill="#002C66"/>
+    <text x="560" y="28" fill="#FFB515" font-size="15" font-family="'Outfit', sans-serif" font-weight="900" letter-spacing="2" text-anchor="middle">
+      4. FORMACIÓN EN DIAMANTE TÁCTICO (CÁPSULA INTEGRAL DE 4 CUSTODIOS)
+    </text>
+
+    <!-- Diamond Geometry -->
+    <g transform="translate(360, 220)">
+      <!-- Radar Rings -->
+      <circle cx="0" cy="0" r="140" fill="none" stroke="rgba(0, 105, 242, 0.25)" stroke-width="1"/>
+      <circle cx="0" cy="0" r="95" fill="none" stroke="rgba(255, 181, 21, 0.25)" stroke-width="1"/>
+
+      <!-- Diamond Polygon -->
+      <polygon points="0,-120 120,0 0,120 -120,0" fill="rgba(0, 105, 242, 0.15)" stroke="#0069F2" stroke-width="2.5"/>
+
+      <!-- Direction Arrow -->
+      <line x1="0" y1="135" x2="0" y2="-150" stroke="#FFB515" stroke-width="3" stroke-dasharray="8,4" marker-end="url(#arrowGold)"/>
+      <text x="15" y="-140" fill="#FFB515" font-size="11" font-family="'Inter', sans-serif" font-weight="700">LÍNEA DE AVANCE</text>
+
+      <!-- VIP (Center) -->
+      <circle cx="0" cy="0" r="24" fill="#FFB515" stroke="#ffffff" stroke-width="2.5"/>
+      <text x="0" y="6" fill="#000000" font-size="14" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">VIP</text>
+
+      <!-- VANGUARDIA (Punta) -->
+      <circle cx="0" cy="-120" r="20" fill="#0069F2" stroke="#ffffff" stroke-width="2.5"/>
+      <text x="0" y="-114" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">P</text>
+      <text x="0" y="-148" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">PUNTA / VANGUARDIA</text>
+
+      <!-- FLANCO DERECHO -->
+      <circle cx="120" cy="0" r="20" fill="#0069F2" stroke="#ffffff" stroke-width="2.5"/>
+      <text x="120" y="5" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">FD</text>
+      <text x="135" y="25" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="700">FLANCO DERECHO</text>
+
+      <!-- FLANCO IZQUIERDO -->
+      <circle cx="-120" cy="0" r="20" fill="#0069F2" stroke="#ffffff" stroke-width="2.5"/>
+      <text x="-120" y="5" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">FI</text>
+      <text x="-135" y="25" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="700" text-anchor="end">FLANCO IZQUIERDO</text>
+
+      <!-- RETAGUARDIA -->
+      <circle cx="0" cy="120" r="20" fill="#0069F2" stroke="#ffffff" stroke-width="2.5"/>
+      <text x="0" y="125" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">R</text>
+      <text x="0" y="156" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">RETAGUARDIA</text>
+    </g>
+
+    <!-- Side Legend &amp; Roles in Diamond -->
+    <g transform="translate(680, 70)">
+      <rect width="400" height="295" rx="10" fill="#001a40" stroke="#004DB3" stroke-width="1.5"/>
+      <text x="20" y="30" fill="#FFB515" font-size="13" font-family="'Outfit', sans-serif" font-weight="700">
+        ROLES OPERATIVOS EN EL DIAMANTE:
+      </text>
+
+      <g transform="translate(20, 50)">
+        <circle cx="10" cy="8" r="7" fill="#0069F2"/>
+        <text x="28" y="12" fill="#ffffff" font-size="11" font-weight="700">Punta (Vanguardia):</text>
+        <text x="28" y="28" fill="#cbd5e1" font-size="10.5">Marca el ritmo de marcha, despeja ruta e identifica amenazas frontales.</text>
+      </g>
+
+      <g transform="translate(20, 105)">
+        <circle cx="10" cy="8" r="7" fill="#0069F2"/>
+        <text x="28" y="12" fill="#ffffff" font-size="11" font-weight="700">Flancos (Izq. / Der.):</text>
+        <text x="28" y="28" fill="#cbd5e1" font-size="10.5">Controlan accesos laterales, cruces peatonales y contacto con público.</text>
+      </g>
+
+      <g transform="translate(20, 160)">
+        <circle cx="10" cy="8" r="7" fill="#0069F2"/>
+        <text x="28" y="12" fill="#ffffff" font-size="11" font-weight="700">Retaguardia:</text>
+        <text x="28" y="28" fill="#cbd5e1" font-size="10.5">Cubre la espalda del convoy pedestre y asegura la vía de repliegue.</text>
+      </g>
+
+      <g transform="translate(20, 215)">
+        <circle cx="10" cy="8" r="7" fill="#FFB515"/>
+        <text x="28" y="12" fill="#FFB515" font-size="11" font-weight="700">Regla Doctrinal de Oro:</text>
+        <text x="28" y="30" fill="#ffffff" font-size="10.5" font-weight="600">"El custodio NO se queda a combatir: CUBRIR Y EVACUAR."</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 44, 102, 0.85)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.85)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+  </defs>
+  
+  
+  <!-- Background -->
+  <rect width="1200" height="680" fill="url(#bgGrad)"/>
+  <rect width="1200" height="680" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="1160" height="640" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="1140" height="620" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 70 L 1160 40 L 1130 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 610 L 40 640 L 70 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 610 L 1160 640 L 1130 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header -->
+  <g transform="translate(600, 60)" text-anchor="middle">
+    <rect x="-190" y="-18" width="380" height="26" rx="13" fill="#002C66" stroke="#004DB3" stroke-width="1.2"/>
+    <text x="0" y="-1" fill="#FFB515" font-size="11" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2">
+      POLICÍA DE TIERRA DEL FUEGO • RESPUESTA ANTE CRISIS
+    </text>
+    <text x="0" y="28" fill="#ffffff" font-size="21" font-family="'Outfit', sans-serif" font-weight="900" letter-spacing="1">
+      DESPLIEGUE OPERATIVO DE EMERGENCIA Y EVACUACIÓN (C.E.E.)
+    </text>
+    <text x="0" y="47" fill="#94a3b8" font-size="12.5" font-family="'Inter', sans-serif">
+      Algoritmo Táctico de Ruptura de Contacto, Extracción de Dignatario y Repliegue
+    </text>
+  </g>
+  
+
+  <!-- 3 Big Phase Cards with Flow Indicators -->
+  <g transform="translate(48, 140)">
+    <!-- FASE 1: CUBRIR -->
+    <g transform="translate(0, 0)">
+      <rect width="330" height="470" rx="14" fill="url(#cardGrad)" stroke="#FFB515" stroke-width="2"/>
+      <rect width="330" height="52" rx="14" fill="#002C66"/>
+      <text x="165" y="23" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">FASE 1 (0 a 2 SEGUNDOS)</text>
+      <text x="165" y="42" fill="#ffffff" font-size="15" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">CUBRIR AL DIGNATARIO</text>
+
+      <!-- Center Shield Badge -->
+      <g transform="translate(165, 105)">
+        <circle cx="0" cy="0" r="34" fill="#001433" stroke="#FFB515" stroke-width="3"/>
+        <text x="0" y="8" fill="#FFB515" font-size="24" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">C</text>
+      </g>
+
+      <g transform="translate(20, 160)" font-family="'Inter', sans-serif" font-size="11.5" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#FFB515">• Alerta Verbal Estandarizada:</text>
+        <text y="18" fill="#cbd5e1" font-size="11">Grito unificado: "¡ARMA AL FRENTE!" o "¡TIROS RETAGUARDIA!".</text>
+
+        <text y="52" font-weight="700" fill="#FFB515">• Escudo Humano Inmediato:</text>
+        <text y="70" fill="#cbd5e1" font-size="11">El escolta más cercano interpone su cuerpo entre la amenaza y el VIP.</text>
+
+        <text y="104" font-weight="700" fill="#FFB515">• Despliegue Balístico:</text>
+        <text y="122" fill="#cbd5e1" font-size="11">Apertura de portafolios blindado y reducción de silueta del VIP.</text>
+
+        <rect x="0" y="155" width="290" height="140" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="14" y="180" fill="#FFB515" font-size="11.5" font-weight="700">Consigna Táctica:</text>
+        <text x="14" y="202" fill="#e2e8f0" font-size="11">"El custodio no se cubre a sí</text>
+        <text x="14" y="220" fill="#e2e8f0" font-size="11">mismo: su cuerpo es el blindaje</text>
+        <text x="14" y="238" fill="#e2e8f0" font-size="11">activo del dignatario."</text>
+      </g>
+    </g>
+
+    <!-- Flow Arrow 1 -> 2 -->
+    <path d="M 334 240 L 376 240" stroke="#FFB515" stroke-width="4" marker-end="url(#arrowGold)"/>
+
+    <!-- FASE 2: EVACUAR -->
+    <g transform="translate(385, 0)">
+      <rect width="330" height="470" rx="14" fill="url(#cardGrad)" stroke="#0069F2" stroke-width="2"/>
+      <rect width="330" height="52" rx="14" fill="#003273"/>
+      <text x="165" y="23" fill="#0069F2" font-size="12" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">FASE 2 (2 a 10 SEGUNDOS)</text>
+      <text x="165" y="42" fill="#ffffff" font-size="15" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">EVACUAR DE LA ZONA</text>
+
+      <!-- Center Movement Badge -->
+      <g transform="translate(165, 105)">
+        <circle cx="0" cy="0" r="34" fill="#001433" stroke="#0069F2" stroke-width="3"/>
+        <text x="0" y="8" fill="#0069F2" font-size="24" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">E</text>
+      </g>
+
+      <g transform="translate(20, 160)" font-family="'Inter', sans-serif" font-size="11.5" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#0069F2">• Dirección Contraria al Ataque:</text>
+        <text y="18" fill="#cbd5e1" font-size="11">Movimiento veloz en sentido opuesto al vector hostil agresor.</text>
+
+        <text y="52" font-weight="700" fill="#0069F2">• Cápsula en Movimiento:</text>
+        <text y="70" fill="#cbd5e1" font-size="11">Los escoltas cierran filas formando un círculo compacto alrededor.</text>
+
+        <text y="104" font-weight="700" fill="#0069F2">• Fuego de Supresión de Apoyo:</text>
+        <text y="122" fill="#cbd5e1" font-size="11">El equipo de retaguardia contiene el avance hostil para permitir escape.</text>
+
+        <rect x="0" y="155" width="290" height="140" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="14" y="180" fill="#0069F2" font-size="11.5" font-weight="700">Consigna Táctica:</text>
+        <text x="14" y="202" fill="#e2e8f0" font-size="11">"La cápsula NUNCA se queda a</text>
+        <text x="14" y="220" fill="#e2e8f0" font-size="11">combatir: el único éxito es</text>
+        <text x="14" y="238" fill="#e2e8f0" font-size="11">extraer con vida al VIP."</text>
+      </g>
+    </g>
+
+    <!-- Flow Arrow 2 -> 3 -->
+    <path d="M 719 240 L 761 240" stroke="#FFB515" stroke-width="4" marker-end="url(#arrowGold)"/>
+
+    <!-- FASE 3: ESCAPAR -->
+    <g transform="translate(770, 0)">
+      <rect width="330" height="470" rx="14" fill="url(#cardGrad)" stroke="#FFB515" stroke-width="2"/>
+      <rect width="330" height="52" rx="14" fill="#002C66"/>
+      <text x="165" y="23" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">FASE 3 (ESCAPE VEHICULAR)</text>
+      <text x="165" y="42" fill="#ffffff" font-size="15" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">ESCAPAR A PUNTO SEGURO</text>
+
+      <!-- Center Vehicle Escape Badge -->
+      <g transform="translate(165, 105)">
+        <circle cx="0" cy="0" r="34" fill="#001433" stroke="#FFB515" stroke-width="3"/>
+        <text x="0" y="8" fill="#FFB515" font-size="24" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">E</text>
+      </g>
+
+      <g transform="translate(20, 160)" font-family="'Inter', sans-serif" font-size="11.5" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#FFB515">• Embarque Inmediato:</text>
+        <text y="18" fill="#cbd5e1" font-size="11">Empuje del VIP al piso del vehículo blindado por el lado seguro.</text>
+
+        <text y="52" font-weight="700" fill="#FFB515">• Maniobra Evasiva de Tracción:</text>
+        <text y="70" fill="#cbd5e1" font-size="11">Aceleración a fondo, embestida táctica o giro en J/Y si hay bloqueo.</text>
+
+        <text y="104" font-weight="700" fill="#FFB515">• Ruta de Contingencia:</text>
+        <text y="122" fill="#cbd5e1" font-size="11">Salida hacia Safe Room o Hospital sin detenerse en semáforos.</text>
+
+        <rect x="0" y="155" width="290" height="140" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="14" y="180" fill="#FFB515" font-size="11.5" font-weight="700">Consigna Táctica:</text>
+        <text x="14" y="202" fill="#e2e8f0" font-size="11">"Mantener el vehículo en</text>
+        <text x="14" y="220" fill="#e2e8f0" font-size="11">movimiento constante: un móvil</text>
+        <text x="14" y="238" fill="#e2e8f0" font-size="11">detenido es un blanco fijo."</text>
+      </g>
+    </g>
+  </g>
+</svg>

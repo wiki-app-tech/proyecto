@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 44, 102, 0.85)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.85)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+  </defs>
+  
+  
+  <!-- Background -->
+  <rect width="1200" height="680" fill="url(#bgGrad)"/>
+  <rect width="1200" height="680" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="1160" height="640" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="1140" height="620" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 70 L 1160 40 L 1130 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 610 L 40 640 L 70 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 610 L 1160 640 L 1130 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header -->
+  <g transform="translate(600, 60)" text-anchor="middle">
+    <rect x="-190" y="-18" width="380" height="26" rx="13" fill="#002C66" stroke="#004DB3" stroke-width="1.2"/>
+    <text x="0" y="-1" fill="#FFB515" font-size="11" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2">
+      POLICÍA DE TIERRA DEL FUEGO • SOPORTE VITAL BÁSICO
+    </text>
+    <text x="0" y="28" fill="#ffffff" font-size="21" font-family="'Outfit', sans-serif" font-weight="900" letter-spacing="1">
+      PROTOCOLO DE DESFIBRILACIÓN EXTERNA AUTOMÁTICA (DEA)
+    </text>
+    <text x="0" y="47" fill="#94a3b8" font-size="12.5" font-family="'Inter', sans-serif">
+      Algoritmo Estandarizado de RCP Táctica y Desfibrilación Inmediata en el Dignatario
+    </text>
+  </g>
+  
+
+  <!-- 5 Cards Horizontal Process -->
+  <g transform="translate(40, 140)">
+    <!-- PASO 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="210" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="210" height="46" rx="12" fill="#003273"/>
+      <text x="105" y="28" fill="#FFB515" font-size="11" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">PASO 1: VERIFICAR</text>
+      
+      <circle cx="105" cy="85" r="24" fill="#002C66" stroke="#FFB515" stroke-width="2"/>
+      <text x="105" y="93" fill="#FFB515" font-size="18" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">1</text>
+
+      <g transform="translate(15, 130)" font-family="'Inter', sans-serif" font-size="10.5" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#FFB515">• Consciencia:</text>
+        <text y="16" fill="#cbd5e1">Llamar en voz alta y sacudir suavemente hombros.</text>
+
+        <text y="46" font-weight="700" fill="#FFB515">• Respiración:</text>
+        <text y="62" fill="#cbd5e1">Mirar tórax por 5-10 seg. (No respira o jadea/boquea).</text>
+
+        <text y="92" font-weight="700" fill="#FFB515">• Solicitar DEA:</text>
+        <text y="108" fill="#cbd5e1">Orden directa a un custodio: "¡Traiga el DEA y llame apoyo!"</text>
+
+        <rect x="0" y="145" width="180" height="175" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="10" y="168" fill="#FFB515" font-size="10" font-weight="700">Tiempo Crítico:</text>
+        <text x="10" y="188" fill="#e2e8f0" font-size="9.5">Cada minuto sin desfibrilar</text>
+        <text x="10" y="204" fill="#e2e8f0" font-size="9.5">reduce la probabilidad de</text>
+        <text x="10" y="220" fill="#e2e8f0" font-size="9.5">supervivencia un 10%.</text>
+        <text x="10" y="242" fill="#0069F2" font-size="9.5" font-weight="700">Iniciar RCP mientras</text>
+        <text x="10" y="258" fill="#0069F2" font-size="9.5" font-weight="700">se conecta el equipo.</text>
+      </g>
+    </g>
+
+    <!-- PASO 2 -->
+    <g transform="translate(228, 0)">
+      <rect width="210" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="210" height="46" rx="12" fill="#003273"/>
+      <text x="105" y="28" fill="#FFB515" font-size="11" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">PASO 2: ENCENDER</text>
+      
+      <circle cx="105" cy="85" r="24" fill="#002C66" stroke="#0069F2" stroke-width="2"/>
+      <text x="105" y="93" fill="#0069F2" font-size="18" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">2</text>
+
+      <g transform="translate(15, 130)" font-family="'Inter', sans-serif" font-size="10.5" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#0069F2">• Oprimir botón ON:</text>
+        <text y="16" fill="#cbd5e1">O abrir la tapa del equipo (se enciende automáticamente).</text>
+
+        <text y="46" font-weight="700" fill="#0069F2">• Escuchar comandos:</text>
+        <text y="62" fill="#cbd5e1">El DEA emite instrucciones por voz en español.</text>
+
+        <text y="92" font-weight="700" fill="#0069F2">• Descubrir Tórax:</text>
+        <text y="108" fill="#cbd5e1">Rasgar vestimenta, corbata y camisa del mandatario.</text>
+
+        <rect x="0" y="145" width="180" height="175" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="10" y="168" fill="#0069F2" font-size="10" font-weight="700">Condición Dérmica:</text>
+        <text x="10" y="188" fill="#e2e8f0" font-size="9.5">Secar el pecho con gasa si</text>
+        <text x="10" y="204" fill="#e2e8f0" font-size="9.5">hay sudoración intensa</text>
+        <text x="10" y="220" fill="#e2e8f0" font-size="9.5">o humedad austral.</text>
+        <text x="10" y="242" fill="#FFB515" font-size="9.5" font-weight="700">Retirar parches de</text>
+        <text x="10" y="258" fill="#FFB515" font-size="9.5" font-weight="700">medicación dérmica previa.</text>
+      </g>
+    </g>
+
+    <!-- PASO 3 -->
+    <g transform="translate(456, 0)">
+      <rect width="210" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="210" height="46" rx="12" fill="#003273"/>
+      <text x="105" y="28" fill="#FFB515" font-size="11" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">PASO 3: PARCHES</text>
+      
+      <circle cx="105" cy="85" r="24" fill="#002C66" stroke="#FFB515" stroke-width="2"/>
+      <text x="105" y="93" fill="#FFB515" font-size="18" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">3</text>
+
+      <g transform="translate(15, 130)" font-family="'Inter', sans-serif" font-size="10.5" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#FFB515">• Parche 1 (Superior):</text>
+        <text y="16" fill="#cbd5e1">Bajo la clavícula derecha, junto al esternón.</text>
+
+        <text y="46" font-weight="700" fill="#FFB515">• Parche 2 (Lateral):</text>
+        <text y="62" fill="#cbd5e1">Costado izquierdo, bajo la axila / tetilla izquierda.</text>
+
+        <text y="92" font-weight="700" fill="#FFB515">• Conectar Cable:</text>
+        <text y="108" fill="#cbd5e1">Enchufar conector parpadeante en la unidad.</text>
+
+        <rect x="0" y="145" width="180" height="175" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="10" y="168" fill="#FFB515" font-size="10" font-weight="700">Adherencia Plena:</text>
+        <text x="10" y="188" fill="#e2e8f0" font-size="9.5">Presionar firmemente los</text>
+        <text x="10" y="204" fill="#e2e8f0" font-size="9.5">electrodos sin arrugas</text>
+        <text x="10" y="220" fill="#e2e8f0" font-size="9.5">para evitar pérdida de</text>
+        <text x="10" y="242" fill="#0069F2" font-size="9.5" font-weight="700">contacto durante la</text>
+        <text x="10" y="258" fill="#0069F2" font-size="9.5" font-weight="700">descarga bifásica.</text>
+      </g>
+    </g>
+
+    <!-- PASO 4 -->
+    <g transform="translate(684, 0)">
+      <rect width="210" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="210" height="46" rx="12" fill="#003273"/>
+      <text x="105" y="28" fill="#FFB515" font-size="11" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">PASO 4: ANÁLISIS</text>
+      
+      <circle cx="105" cy="85" r="24" fill="#002C66" stroke="#0069F2" stroke-width="2"/>
+      <text x="105" y="93" fill="#0069F2" font-size="18" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">4</text>
+
+      <g transform="translate(15, 130)" font-family="'Inter', sans-serif" font-size="10.5" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#0069F2">• Advertencia Verbal:</text>
+        <text y="16" fill="#cbd5e1">Gritar fuerte y claro: "¡NADIE TOQUE AL VIP!"</text>
+
+        <text y="46" font-weight="700" fill="#0069F2">• Detener Masaje:</text>
+        <text y="62" fill="#cbd5e1">Retirar manos del tórax para no falsear el ECG.</text>
+
+        <text y="92" font-weight="700" fill="#0069F2">• Detección de Ritmo:</text>
+        <text y="108" fill="#cbd5e1">El DEA diagnostica Fibrilación Ventricular (FV/TV).</text>
+
+        <rect x="0" y="145" width="180" height="175" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="10" y="168" fill="#0069F2" font-size="10" font-weight="700">Seguridad Eléctrica:</text>
+        <text x="10" y="188" fill="#e2e8f0" font-size="9.5">Verificar que ningún miembro</text>
+        <text x="10" y="204" fill="#e2e8f0" font-size="9.5">de la escolta esté en</text>
+        <text x="10" y="220" fill="#e2e8f0" font-size="9.5">contacto con el cuerpo o la</text>
+        <text x="10" y="242" fill="#FFB515" font-size="9.5" font-weight="700">camilla metálica.</text>
+      </g>
+    </g>
+
+    <!-- PASO 5 -->
+    <g transform="translate(912, 0)">
+      <rect width="210" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="210" height="46" rx="12" fill="#003273"/>
+      <text x="105" y="28" fill="#FFB515" font-size="11" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">PASO 5: DESCARGA</text>
+      
+      <circle cx="105" cy="85" r="24" fill="#002C66" stroke="#FFB515" stroke-width="2"/>
+      <text x="105" y="93" fill="#FFB515" font-size="18" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">5</text>
+
+      <g transform="translate(15, 130)" font-family="'Inter', sans-serif" font-size="10.5" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#FFB515">• Botón Descarga:</text>
+        <text y="16" fill="#cbd5e1">Si se indica, pulsar el botón parpadeante de descarga.</text>
+
+        <text y="46" font-weight="700" fill="#FFB515">• Reanudar RCP:</text>
+        <text y="62" fill="#cbd5e1">Inmediatamente después del choque: 30 compresiones / 2 vent.</text>
+
+        <text y="92" font-weight="700" fill="#FFB515">• Ciclos de 2 Minutos:</text>
+        <text y="108" fill="#cbd5e1">El DEA reanaliza cada 2 min. No retirar electrodos.</text>
+
+        <rect x="0" y="145" width="180" height="175" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="10" y="168" fill="#FFB515" font-size="10" font-weight="700">Parámetros RCP:</text>
+        <text x="10" y="188" fill="#e2e8f0" font-size="9.5">• Ritmo: 100 - 120 cpm</text>
+        <text x="10" y="204" fill="#e2e8f0" font-size="9.5">• Profundidad: 5 a 6 cm</text>
+        <text x="10" y="220" fill="#e2e8f0" font-size="9.5">• Descompresión completa</text>
+        <text x="10" y="242" fill="#0069F2" font-size="9.5" font-weight="700">Relevo de operador cada</text>
+        <text x="10" y="258" fill="#0069F2" font-size="9.5" font-weight="700">2 minutos para evitar fatiga.</text>
+      </g>
+    </g>
+  </g>
+</svg>

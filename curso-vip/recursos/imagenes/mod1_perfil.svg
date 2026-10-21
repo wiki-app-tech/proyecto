@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="50%" stop-color="#002C66"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="900" fill="url(#bg)"/>
+  <rect x="24" y="24" width="852" height="852" rx="16" fill="none" stroke="#004DB3" stroke-width="2"/>
+
+  <!-- Title Header -->
+  <text x="450" y="65" fill="#FFB515" font-size="22" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="2">
+    EL RADAR DEL CUSTODIO DE ÉLITE (7 COMPETENCIAS)
+  </text>
+  <text x="450" y="90" fill="#cbd5e1" font-size="13" font-family="'Inter', sans-serif" text-anchor="middle">
+    Perfil Integral del Operador de Protección a Dignatarios • Policía TDF
+  </text>
+  <line x1="120" y1="108" x2="780" y2="108" stroke="#004DB3" stroke-width="1.5"/>
+
+  <!-- HEPTAGON RADAR CENTER AT (450, 480) -->
+  <g transform="translate(450, 480)">
+    <!-- Radar Web Levels: 25%, 50%, 75%, 100% -->
+    <polygon points="0,-260 225,-128 253,115 72,250 -156,210 -253,30 -140,-220" fill="none" stroke="rgba(0, 105, 242, 0.25)" stroke-width="1.5"/>
+    <polygon points="0,-195 169,-96 190,86 54,188 -117,158 -190,23 -105,-165" fill="none" stroke="rgba(0, 105, 242, 0.3)" stroke-width="1.5"/>
+    <polygon points="0,-130 113,-64 127,58 36,125 -78,105 -127,15 -70,-110" fill="none" stroke="rgba(0, 105, 242, 0.35)" stroke-width="1.5"/>
+    <polygon points="0,-65 56,-32 63,29 18,63 -39,53 -63,8 -35,-55" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+
+    <!-- Operational Score Polygon (Filled in green/gold) -->
+    <polygon points="0,-240 210,-110 240,100 60,225 -140,190 -230,25 -130,-200" 
+             fill="rgba(34, 197, 94, 0.35)" stroke="#22c55e" stroke-width="3"/>
+
+    <!-- Vertices Points -->
+    <circle cx="0" cy="-240" r="7" fill="#FFB515" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="210" cy="-110" r="7" fill="#FFB515" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="240" cy="100" r="7" fill="#FFB515" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="60" cy="225" r="7" fill="#FFB515" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="-140" cy="190" r="7" fill="#FFB515" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="-230" cy="25" r="7" fill="#FFB515" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="-130" cy="-200" r="7" fill="#FFB515" stroke="#ffffff" stroke-width="2"/>
+
+    <!-- Center Point -->
+    <circle cx="0" cy="0" r="4" fill="#FFB515"/>
+
+    <!-- LABELS ON THE 7 VERTICES -->
+    <!-- 1. Mente Estoica (Top) -->
+    <text x="0" y="-285" fill="#FFB515" font-size="14" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">
+      1. TEMPLANZA Y MENTE ESTOICA
+    </text>
+    <text x="0" y="-268" fill="#cbd5e1" font-size="11" text-anchor="middle">Control del pánico / Claridad bajo fuego</text>
+
+    <!-- 2. Condición Física (Top Right) -->
+    <text x="250" y="-135" fill="#ffffff" font-size="13" font-family="'Outfit', sans-serif" font-weight="800">
+      2. CONDICIÓN FÍSICA Y TIRO
+    </text>
+    <text x="250" y="-118" fill="#cbd5e1" font-size="10.5">Resistencia y precisión refleja</text>
+
+    <!-- 3. Dominio Táctico (Right) -->
+    <text x="275" y="115" fill="#ffffff" font-size="13" font-family="'Outfit', sans-serif" font-weight="800">
+      3. DOMINIO TÁCTICO
+    </text>
+    <text x="275" y="132" fill="#cbd5e1" font-size="10.5">Formaciones y evacuación C.E.E.</text>
+
+    <!-- 4. Discreción (Bottom Right) -->
+    <text x="80" y="270" fill="#ffffff" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">
+      4. DISCRECIÓN Y PERFIL BAJO
+    </text>
+    <text x="80" y="287" fill="#cbd5e1" font-size="10.5" text-anchor="middle">Invisibilidad táctica sin estridencias</text>
+
+    <!-- 5. Ética y Lealtad (Bottom Left) -->
+    <text x="-160" y="240" fill="#ffffff" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="end">
+      5. ÉTICA Y LEALTAD
+    </text>
+    <text x="-160" y="257" fill="#cbd5e1" font-size="10.5" text-anchor="end">Defensa de la investidura</text>
+
+    <!-- 6. Diplomacia (Left) -->
+    <text x="-255" y="25" fill="#ffffff" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="end">
+      6. DIPLOMACIA Y PROTOCOLO
+    </text>
+    <text x="-255" y="42" fill="#cbd5e1" font-size="10.5" text-anchor="end">Trato con comitivas de Estado</text>
+
+    <!-- 7. Adaptabilidad (Top Left) -->
+    <text x="-150" y="-220" fill="#ffffff" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="end">
+      7. ADAPTABILIDAD
+    </text>
+    <text x="-150" y="-203" fill="#cbd5e1" font-size="10.5" text-anchor="end">Flexibilidad situacional</text>
+  </g>
+</svg>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 44, 102, 0.85)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.85)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+  </defs>
+  
+  
+  <!-- Background -->
+  <rect width="1200" height="680" fill="url(#bgGrad)"/>
+  <rect width="1200" height="680" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="1160" height="640" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="1140" height="620" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 70 L 1160 40 L 1130 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 610 L 40 640 L 70 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 610 L 1160 640 L 1130 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header -->
+  <g transform="translate(600, 60)" text-anchor="middle">
+    <rect x="-190" y="-18" width="380" height="26" rx="13" fill="#002C66" stroke="#004DB3" stroke-width="1.2"/>
+    <text x="0" y="-1" fill="#FFB515" font-size="11" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2">
+      POLICÍA DE TIERRA DEL FUEGO • DOCTRINA DEL USO RACIONAL DE LA FUERZA
+    </text>
+    <text x="0" y="28" fill="#ffffff" font-size="21" font-family="'Outfit', sans-serif" font-weight="900" letter-spacing="1">
+      LA LEGITIMIDAD COMO ESCUDO TÁCTICO Y LEGAL
+    </text>
+    <text x="0" y="47" fill="#94a3b8" font-size="12.5" font-family="'Inter', sans-serif">
+      Los Cuatro Principios Rectores ante Situaciones Críticas en Protección de Dignatarios
+    </text>
+  </g>
+  
+
+  <!-- Center Tactical Shield -->
+  <g transform="translate(600, 360)">
+    <!-- Radial Waves -->
+    <circle cx="0" cy="0" r="160" fill="none" stroke="rgba(0, 105, 242, 0.2)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="190" fill="none" stroke="rgba(255, 181, 21, 0.15)" stroke-width="1.5" stroke-dasharray="6,6"/>
+    
+    <!-- Shield Outer -->
+    <path d="M 0 -130 L 110 -70 L 110 50 C 110 110 0 150 0 150 C 0 150 -110 110 -110 50 L -110 -70 Z" fill="#002C66" stroke="url(#goldGrad)" stroke-width="4"/>
+    <path d="M 0 -115 L 95 -60 L 95 45 C 95 98 0 135 0 135 C 0 135 -95 98 -95 45 L -95 -60 Z" fill="#001433" stroke="#004DB3" stroke-width="2"/>
+    
+    <!-- Shield Emblem -->
+    <circle cx="0" cy="-5" r="42" fill="#003273" stroke="#FFB515" stroke-width="2"/>
+    <text x="0" y="-14" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">ESCUDO</text>
+    <text x="0" y="2" fill="#FFB515" font-size="12" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">DE LA</text>
+    <text x="0" y="17" fill="#ffffff" font-size="9" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">LEYES</text>
+    
+    <text x="0" y="80" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">CUSTODIA VIP</text>
+    <text x="0" y="98" fill="#94a3b8" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">POLICÍA TDF</text>
+  </g>
+
+  <!-- 4 Principles Cards surrounding Shield -->
+  <!-- Top Left: LEGALIDAD -->
+  <g transform="translate(60, 140)">
+    <rect width="360" height="190" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+    <rect width="360" height="38" rx="12" fill="#003273"/>
+    <text x="180" y="24" fill="#FFB515" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">
+      1. PRINCIPIO DE LEGALIDAD
+    </text>
+    <g transform="translate(20, 58)" font-family="'Inter', sans-serif" font-size="11" fill="#e2e8f0">
+      <text y="0" font-weight="700" fill="#ffffff">• Fundamento normativo estricto:</text>
+      <text y="18" fill="#cbd5e1">Toda intervención táctica debe basarse en leyes,</text>
+      <text y="34" fill="#cbd5e1">códigos y protocolos preestablecidos.</text>
+      
+      <text y="62" font-weight="700" fill="#ffffff">• Límites del mandato:</text>
+      <text y="80" fill="#cbd5e1">El custodio no puede ejecutar órdenes</text>
+      <text y="96" fill="#cbd5e1">manifiestamente ilegales o arbitrarias.</text>
+    </g>
+  </g>
+
+  <!-- Bottom Left: PROPORCIONALIDAD -->
+  <g transform="translate(60, 360)">
+    <rect width="360" height="190" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+    <rect width="360" height="38" rx="12" fill="#003273"/>
+    <text x="180" y="24" fill="#FFB515" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">
+      2. PRINCIPIO DE PROPORCIONALIDAD
+    </text>
+    <g transform="translate(20, 58)" font-family="'Inter', sans-serif" font-size="11" fill="#e2e8f0">
+      <text y="0" font-weight="700" fill="#ffffff">• Graduación de la respuesta:</text>
+      <text y="18" fill="#cbd5e1">El nivel de fuerza empleado debe ser equivalente</text>
+      <text y="34" fill="#cbd5e1">a la agresión y peligro inminente.</text>
+      
+      <text y="62" font-weight="700" fill="#ffffff">• Uso letal excepcional:</text>
+      <text y="80" fill="#cbd5e1">El arma de fuego es el último recurso ante</text>
+      <text y="96" fill="#cbd5e1">riesgo cierto e inminente de muerte o lesión grave.</text>
+    </g>
+  </g>
+
+  <!-- Top Right: NECESIDAD -->
+  <g transform="translate(780, 140)">
+    <rect width="360" height="190" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+    <rect width="360" height="38" rx="12" fill="#003273"/>
+    <text x="180" y="24" fill="#FFB515" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">
+      3. PRINCIPIO DE NECESIDAD
+    </text>
+    <g transform="translate(20, 58)" font-family="'Inter', sans-serif" font-size="11" fill="#e2e8f0">
+      <text y="0" font-weight="700" fill="#ffffff">• Inexistencia de alternativa:</text>
+      <text y="18" fill="#cbd5e1">Se recurre a la coacción solo cuando la disuasión</text>
+      <text y="34" fill="#cbd5e1">y la evacuación resulten insuficientes.</text>
+      
+      <text y="62" font-weight="700" fill="#ffffff">• Mínimo daño indispensable:</text>
+      <text y="80" fill="#cbd5e1">Cesar la acción de fuerza inmediatamente</text>
+      <text y="96" fill="#cbd5e1">después de neutralizar la amenaza activa.</text>
+    </g>
+  </g>
+
+  <!-- Bottom Right: OPORTUNIDAD -->
+  <g transform="translate(780, 360)">
+    <rect width="360" height="190" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+    <rect width="360" height="38" rx="12" fill="#003273"/>
+    <text x="180" y="24" fill="#FFB515" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">
+      4. PRINCIPIO DE OPORTUNIDAD
+    </text>
+    <g transform="translate(20, 58)" font-family="'Inter', sans-serif" font-size="11" fill="#e2e8f0">
+      <text y="0" font-weight="700" fill="#ffffff">• Momento táctico preciso:</text>
+      <text y="18" fill="#cbd5e1">La reacción debe desplegarse en el instante</text>
+      <text y="34" fill="#cbd5e1">exacto en que se manifiesta la agresión.</text>
+      
+      <text y="62" font-weight="700" fill="#ffffff">• Evitar daños colaterales:</text>
+      <text y="80" fill="#cbd5e1">Evaluar la densidad de público circundante</text>
+      <text y="96" fill="#cbd5e1">antes de ejecutar cualquier disparo táctico.</text>
+    </g>
+  </g>
+
+  <!-- Bottom Banner -->
+  <g transform="translate(160, 580)">
+    <rect width="880" height="46" rx="8" fill="#001433" stroke="#FFB515" stroke-width="1.5"/>
+    <text x="440" y="28" fill="#FFB515" font-size="12.5" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">
+      "EL CUSTODIO QUE ACTÚA BAJO LA LEGITIMIDAD BLINDA AL DIGNATARIO Y PRESERVA EL ESTADO DE DERECHO"
+    </text>
+  </g>
+</svg>

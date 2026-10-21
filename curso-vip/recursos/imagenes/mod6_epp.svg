@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 44, 102, 0.85)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.85)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+  </defs>
+  
+  
+  <!-- Background -->
+  <rect width="1200" height="680" fill="url(#bgGrad)"/>
+  <rect width="1200" height="680" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="1160" height="640" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="1140" height="620" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 70 L 1160 40 L 1130 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 610 L 40 640 L 70 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 610 L 1160 640 L 1130 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header -->
+  <g transform="translate(600, 60)" text-anchor="middle">
+    <rect x="-190" y="-18" width="380" height="26" rx="13" fill="#002C66" stroke="#004DB3" stroke-width="1.2"/>
+    <text x="0" y="-1" fill="#FFB515" font-size="11" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2">
+      POLICÍA DE TIERRA DEL FUEGO • BIOSEGURIDAD Y AMENAZAS QBRN
+    </text>
+    <text x="0" y="28" fill="#ffffff" font-size="21" font-family="'Outfit', sans-serif" font-weight="900" letter-spacing="1">
+      EQUIPO DE PROTECCIÓN PERSONAL TÁCTICO (EPP-QBRN)
+    </text>
+    <text x="0" y="47" fill="#94a3b8" font-size="12.5" font-family="'Inter', sans-serif">
+      Dotación Operacional Estandarizada para Escoltas y Cápsula del Dignatario
+    </text>
+  </g>
+  
+
+  <g transform="translate(48, 140)">
+    <!-- COMPONENTE 1: RESPIRATORIO -->
+    <g transform="translate(0, 0)">
+      <rect width="260" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="260" height="45" rx="12" fill="#003273"/>
+      <text x="130" y="28" fill="#FFB515" font-size="12" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">1. VÍA RESPIRATORIA</text>
+      
+      <!-- Icon Graphic -->
+      <g transform="translate(130, 95)">
+        <circle cx="0" cy="0" r="32" fill="#002C66" stroke="#0069F2" stroke-width="2"/>
+        <path d="M -16 -12 C -8 -22 8 -22 16 -12 L 18 10 C 18 20 0 24 0 24 C 0 24 -18 20 -18 10 Z" fill="#001433" stroke="#FFB515" stroke-width="2"/>
+        <circle cx="0" cy="8" r="8" fill="#0069F2"/>
+      </g>
+
+      <g transform="translate(18, 150)" font-family="'Inter', sans-serif" font-size="11" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#FFB515">• Máscara Panorámica</text>
+        <text y="18" fill="#cbd5e1" font-size="10.5">Visera balística de policarbonato con sellado facial estanco.</text>
+
+        <text y="48" font-weight="700" fill="#FFB515">• Filtro Mixto ABEK2P3</text>
+        <text y="66" fill="#cbd5e1" font-size="10.5">Neutraliza gases de guerra, vapores orgánicos y bio-aerosoles.</text>
+
+        <text y="98" font-weight="700" fill="#FFB515">• Capucha de Escape VIP</text>
+        <text y="116" fill="#cbd5e1" font-size="10.5">Colocación rápida en &lt;8 seg. Brinda 15 min de aire seguro.</text>
+
+        <rect x="0" y="150" width="224" height="150" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="12" y="172" fill="#0069F2" font-size="10.5" font-weight="700">Protocolo Inmediato:</text>
+        <text x="12" y="192" fill="#e2e8f0" font-size="10">Ante olor inusual, niebla o</text>
+        <text x="12" y="208" fill="#e2e8f0" font-size="10">síntoma en la comitiva:</text>
+        <text x="12" y="226" fill="#FFB515" font-size="10" font-weight="700">1° Colocar capucha al VIP</text>
+        <text x="12" y="244" fill="#FFB515" font-size="10" font-weight="700">2° Máscara el custodio</text>
+      </g>
+    </g>
+
+    <!-- COMPONENTE 2: DÉRMICO -->
+    <g transform="translate(282, 0)">
+      <rect width="260" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="260" height="45" rx="12" fill="#003273"/>
+      <text x="130" y="28" fill="#FFB515" font-size="12" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">2. PROTECCIÓN DÉRMICA</text>
+      
+      <!-- Icon Graphic -->
+      <g transform="translate(130, 95)">
+        <circle cx="0" cy="0" r="32" fill="#002C66" stroke="#0069F2" stroke-width="2"/>
+        <path d="M -18 -15 L 18 -15 L 12 18 L -12 18 Z" fill="#001433" stroke="#FFB515" stroke-width="2"/>
+        <line x1="-12" y1="-5" x2="12" y2="-5" stroke="#0069F2" stroke-width="2"/>
+      </g>
+
+      <g transform="translate(18, 150)" font-family="'Inter', sans-serif" font-size="11" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#0069F2">• Traje Estanco Nivel B/C</text>
+        <text y="18" fill="#cbd5e1" font-size="10.5">Membrana multicapa resistente a agentes vesicantes y tóxicos.</text>
+
+        <text y="48" font-weight="700" fill="#0069F2">• Bajo Perfil Táctico</text>
+        <text y="66" fill="#cbd5e1" font-size="10.5">Diseñado para vestir debajo o sobre indumentaria formal.</text>
+
+        <text y="98" font-weight="700" fill="#0069F2">• Sellado Termo-adherido</text>
+        <text y="116" fill="#cbd5e1" font-size="10.5">Costuras vulcanizadas sin filtración de microgotas.</text>
+
+        <rect x="0" y="150" width="224" height="150" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="12" y="172" fill="#0069F2" font-size="10.5" font-weight="700">Propiedad Táctica:</text>
+        <text x="12" y="192" fill="#e2e8f0" font-size="10">Barrera total contra fluidos</text>
+        <text x="12" y="208" fill="#e2e8f0" font-size="10">corporales, ántrax, sarín</text>
+        <text x="12" y="226" fill="#e2e8f0" font-size="10">y agentes industriales</text>
+        <text x="12" y="244" fill="#e2e8f0" font-size="10">tóxicos (TICs).</text>
+      </g>
+    </g>
+
+    <!-- COMPONENTE 3: EXTREMIDADES -->
+    <g transform="translate(564, 0)">
+      <rect width="260" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="260" height="45" rx="12" fill="#003273"/>
+      <text x="130" y="28" fill="#FFB515" font-size="12" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">3. GUANTES Y CALZADO</text>
+      
+      <!-- Icon Graphic -->
+      <g transform="translate(130, 95)">
+        <circle cx="0" cy="0" r="32" fill="#002C66" stroke="#0069F2" stroke-width="2"/>
+        <path d="M -10 -15 C -5 -20 5 -20 10 -15 L 14 10 L -14 10 Z" fill="#001433" stroke="#FFB515" stroke-width="2"/>
+        <circle cx="0" cy="18" r="4" fill="#FFB515"/>
+      </g>
+
+      <g transform="translate(18, 150)" font-family="'Inter', sans-serif" font-size="11" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#FFB515">• Guantes de Doble Capa</text>
+        <text y="18" fill="#cbd5e1" font-size="10.5">Interior: Nitrilo quirúrgico.<br/>Exterior: Butilo anticorte.</text>
+
+        <text y="48" font-weight="700" fill="#FFB515">• Destreza con Armamento</text>
+        <text y="66" fill="#cbd5e1" font-size="10.5">Sensibilidad táctil óptima para disparo y manipulación.</text>
+
+        <text y="98" font-weight="700" fill="#FFB515">• Cubrecalzado Butílico</text>
+        <text y="116" fill="#cbd5e1" font-size="10.5">Suela antideslizante estanca para terrenos contaminados.</text>
+
+        <rect x="0" y="150" width="224" height="150" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="12" y="172" fill="#FFB515" font-size="10.5" font-weight="700">Sellado Cruzado:</text>
+        <text x="12" y="192" fill="#e2e8f0" font-size="10">Uso de cinta Chem-Tape en</text>
+        <text x="12" y="208" fill="#e2e8f0" font-size="10">la unión muñeca-guante y</text>
+        <text x="12" y="226" fill="#e2e8f0" font-size="10">tobillo-bota para cierre</text>
+        <text x="12" y="244" fill="#e2e8f0" font-size="10">hermético absoluto.</text>
+      </g>
+    </g>
+
+    <!-- COMPONENTE 4: DETECCIÓN -->
+    <g transform="translate(846, 0)">
+      <rect width="260" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="260" height="45" rx="12" fill="#003273"/>
+      <text x="130" y="28" fill="#FFB515" font-size="12" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">4. DETECCIÓN Y ALERTA</text>
+      
+      <!-- Icon Graphic -->
+      <g transform="translate(130, 95)">
+        <circle cx="0" cy="0" r="32" fill="#002C66" stroke="#0069F2" stroke-width="2"/>
+        <rect x="-14" y="-18" width="28" height="36" rx="4" fill="#001433" stroke="#0069F2" stroke-width="2"/>
+        <line x1="-8" y1="-8" x2="8" y2="-8" stroke="#FFB515" stroke-width="2"/>
+        <circle cx="0" cy="6" r="3" fill="#0069F2"/>
+      </g>
+
+      <g transform="translate(18, 150)" font-family="'Inter', sans-serif" font-size="11" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#0069F2">• Detector Multigás 4-en-1</text>
+        <text y="18" fill="#cbd5e1" font-size="10.5">Monitoreo continuo de O2, CO, LEL y sulfuro de hidrógeno.</text>
+
+        <text y="48" font-weight="700" fill="#0069F2">• Dosímetro Radiológico</text>
+        <text y="66" fill="#cbd5e1" font-size="10.5">Medición de tasa de dosis acumulada (Rayos X y Gamma).</text>
+
+        <text y="98" font-weight="700" fill="#0069F2">• Tiras M8 / M9 Químicas</text>
+        <text y="116" fill="#cbd5e1" font-size="10.5">Papel reactivo de cambio de color ante gotas químicas.</text>
+
+        <rect x="0" y="150" width="224" height="150" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="12" y="172" fill="#0069F2" font-size="10.5" font-weight="700">Alarma Sonora y Vibratoria:</text>
+        <text x="12" y="192" fill="#e2e8f0" font-size="10">Configurado en modo discreto</text>
+        <text x="12" y="208" fill="#e2e8f0" font-size="10">por vibración táctica al</text>
+        <text x="12" y="226" fill="#e2e8f0" font-size="10">custodio para no generar</text>
+        <text x="12" y="244" fill="#e2e8f0" font-size="10">pánico en la comitiva.</text>
+      </g>
+    </g>
+  </g>
+</svg>

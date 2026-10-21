@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 44, 102, 0.85)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.85)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+  </defs>
+  
+  
+  <!-- Background -->
+  <rect width="1200" height="680" fill="url(#bgGrad)"/>
+  <rect width="1200" height="680" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="1160" height="640" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="1140" height="620" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 70 L 1160 40 L 1130 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 610 L 40 640 L 70 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 610 L 1160 640 L 1130 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header -->
+  <g transform="translate(600, 60)" text-anchor="middle">
+    <rect x="-190" y="-18" width="380" height="26" rx="13" fill="#002C66" stroke="#004DB3" stroke-width="1.2"/>
+    <text x="0" y="-1" fill="#FFB515" font-size="11" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2">
+      POLICÍA DE TIERRA DEL FUEGO • BASES JURÍDICAS
+    </text>
+    <text x="0" y="28" fill="#ffffff" font-size="21" font-family="'Outfit', sans-serif" font-weight="900" letter-spacing="1">
+      LOS CUATRO PILARES LEGALES DE LA CUSTODIA VIP
+    </text>
+    <text x="0" y="47" fill="#94a3b8" font-size="12.5" font-family="'Inter', sans-serif">
+      Marco Constitucional, Legislativo, Penal e Institucional en la República Argentina
+    </text>
+  </g>
+  
+
+  <!-- 4 Cards -->
+  <g transform="translate(48, 140)">
+    <!-- CARD 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="260" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="260" height="52" rx="12" fill="#003273"/>
+      <text x="130" y="24" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">PILAR I</text>
+      <text x="130" y="42" fill="#ffffff" font-size="13" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">CONSTITUCIÓN NACIONAL</text>
+      
+      <circle cx="130" cy="95" r="28" fill="#002C66" stroke="#FFB515" stroke-width="2"/>
+      <text x="130" y="103" fill="#FFB515" font-size="22" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">CN</text>
+
+      <g transform="translate(18, 145)" font-family="'Inter', sans-serif" font-size="11.5" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#FFB515">• Art. 18: Garantías</text>
+        <text y="18" fill="#cbd5e1" font-size="10.5">Debido proceso y tutela de la vida e integridad física.</text>
+
+        <text y="50" font-weight="700" fill="#FFB515">• Art. 19: Principio de Reserva</text>
+        <text y="68" fill="#cbd5e1" font-size="10.5">Nadie está obligado a hacer lo que no manda la ley.</text>
+
+        <text y="100" font-weight="700" fill="#FFB515">• Art. 75 Inc. 22: DD.HH.</text>
+        <text y="118" fill="#cbd5e1" font-size="10.5">Jerarquía constitucional de pactos internacionales.</text>
+
+        <rect x="0" y="150" width="224" height="155" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="10" y="172" fill="#FFB515" font-size="11" font-weight="700">Misión Doctrinal:</text>
+        <text x="10" y="192" fill="#e2e8f0" font-size="10.5">Protección prioritaria de la</text>
+        <text x="10" y="208" fill="#e2e8f0" font-size="10.5">investidura republicana y</text>
+        <text x="10" y="224" fill="#e2e8f0" font-size="10.5">la continuidad del Estado</text>
+        <text x="10" y="240" fill="#e2e8f0" font-size="10.5">de Derecho.</text>
+      </g>
+    </g>
+
+    <!-- CARD 2 -->
+    <g transform="translate(282, 0)">
+      <rect width="260" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="260" height="52" rx="12" fill="#003273"/>
+      <text x="130" y="24" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">PILAR II</text>
+      <text x="130" y="42" fill="#ffffff" font-size="13" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">SEGURIDAD INTERIOR</text>
+      
+      <circle cx="130" cy="95" r="28" fill="#002C66" stroke="#0069F2" stroke-width="2"/>
+      <text x="130" y="102" fill="#0069F2" font-size="18" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">24.059</text>
+
+      <g transform="translate(18, 145)" font-family="'Inter', sans-serif" font-size="11.5" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#0069F2">• Ley Nac. N° 24.059</text>
+        <text y="18" fill="#cbd5e1" font-size="10.5">Bases jurídicas y orgánicas del Sistema de Seguridad Interior.</text>
+
+        <text y="50" font-weight="700" fill="#0069F2">• Art. 2 y 3: Coordinación</text>
+        <text y="68" fill="#cbd5e1" font-size="10.5">Articulación con Fuerzas Federales (PFA, GNA, PNA, PSA).</text>
+
+        <text y="100" font-weight="700" fill="#0069F2">• Jurisdicción TDF</text>
+        <text y="118" fill="#cbd5e1" font-size="10.5">Competencia provincial con extensión protocolar.</text>
+
+        <rect x="0" y="150" width="224" height="155" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="10" y="172" fill="#0069F2" font-size="11" font-weight="700">Misión Doctrinal:</text>
+        <text x="10" y="192" fill="#e2e8f0" font-size="10.5">Interoperabilidad táctica y</text>
+        <text x="10" y="208" fill="#e2e8f0" font-size="10.5">canales de enlace seguro</text>
+        <text x="10" y="224" fill="#e2e8f0" font-size="10.5">ante visitas oficiales y</text>
+        <text x="10" y="240" fill="#e2e8f0" font-size="10.5">mandatarios extranjeros.</text>
+      </g>
+    </g>
+
+    <!-- CARD 3 -->
+    <g transform="translate(564, 0)">
+      <rect width="260" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="260" height="52" rx="12" fill="#003273"/>
+      <text x="130" y="24" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">PILAR III</text>
+      <text x="130" y="42" fill="#ffffff" font-size="13" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">CÓDIGO PENAL ARG.</text>
+      
+      <circle cx="130" cy="95" r="28" fill="#002C66" stroke="#FFB515" stroke-width="2"/>
+      <text x="130" y="102" fill="#FFB515" font-size="18" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">ART 34</text>
+
+      <g transform="translate(18, 145)" font-family="'Inter', sans-serif" font-size="11.5" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#FFB515">• Art. 34 Inc. 4: Deber</text>
+        <text y="18" fill="#cbd5e1" font-size="10.5">Cumplimiento del deber y ejercicio legítimo de autoridad.</text>
+
+        <text y="50" font-weight="700" fill="#FFB515">• Art. 34 Inc. 6: Defensa</text>
+        <text y="68" fill="#cbd5e1" font-size="10.5">Legítima defensa del VIP y de terceros amenazados.</text>
+
+        <text y="100" font-weight="700" fill="#FFB515">• 3 Requisitos Clave</text>
+        <text y="118" fill="#cbd5e1" font-size="10.5">1. Agresión ilegítima actual.<br/>2. Necesidad racional medio.<br/>3. Falta de provocación.</text>
+
+        <rect x="0" y="150" width="224" height="155" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="10" y="172" fill="#FFB515" font-size="11" font-weight="700">Misión Doctrinal:</text>
+        <text x="10" y="192" fill="#e2e8f0" font-size="10.5">Inmunidad penal por causa</text>
+        <text x="10" y="208" fill="#e2e8f0" font-size="10.5">de justificación ante el uso</text>
+        <text x="10" y="224" fill="#e2e8f0" font-size="10.5">defensivo de la fuerza</text>
+        <text x="10" y="240" fill="#e2e8f0" font-size="10.5">para salvar la vida del VIP.</text>
+      </g>
+    </g>
+
+    <!-- CARD 4 -->
+    <g transform="translate(846, 0)">
+      <rect width="260" height="470" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="260" height="52" rx="12" fill="#003273"/>
+      <text x="130" y="24" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">PILAR IV</text>
+      <text x="130" y="42" fill="#ffffff" font-size="13" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">DOCTRINA POLICIAL TDF</text>
+      
+      <circle cx="130" cy="95" r="28" fill="#002C66" stroke="#0069F2" stroke-width="2"/>
+      <text x="130" y="102" fill="#0069F2" font-size="18" font-family="'Inter', sans-serif" font-weight="900" text-anchor="middle">TDF</text>
+
+      <g transform="translate(18, 145)" font-family="'Inter', sans-serif" font-size="11.5" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#0069F2">• Ley Orgánica Policial</text>
+        <text y="18" fill="#cbd5e1" font-size="10.5">Reglamento interno de servicios y custodia provincial.</text>
+
+        <text y="50" font-weight="700" fill="#0069F2">• Manual de Custodia</text>
+        <text y="68" fill="#cbd5e1" font-size="10.5">Procedimientos Operativos Estandarizados (SOP).</text>
+
+        <text y="100" font-weight="700" fill="#0069F2">• Código de Conducta</text>
+        <text y="118" fill="#cbd5e1" font-size="10.5">Principios básicos para el empleo de armas de fuego.</text>
+
+        <rect x="0" y="150" width="224" height="155" rx="8" fill="#001433" stroke="#004DB3" stroke-width="1"/>
+        <text x="10" y="172" fill="#0069F2" font-size="11" font-weight="700">Misión Doctrinal:</text>
+        <text x="10" y="192" fill="#e2e8f0" font-size="10.5">Alineación táctica total</text>
+        <text x="10" y="208" fill="#e2e8f0" font-size="10.5">y disciplina de fuego:</text>
+        <text x="10" y="224" fill="#e2e8f0" font-size="10.5">priorizar la evacuación</text>
+        <text x="10" y="240" fill="#e2e8f0" font-size="10.5">sobre el combate.</text>
+      </g>
+    </g>
+  </g>
+</svg>

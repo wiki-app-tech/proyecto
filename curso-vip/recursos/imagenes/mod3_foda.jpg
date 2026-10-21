@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800" viewBox="0 0 1000 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="50%" stop-color="#002C66"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="800" fill="url(#bg)"/>
+  <rect x="24" y="24" width="952" height="752" rx="16" fill="none" stroke="#004DB3" stroke-width="2"/>
+
+  <text x="500" y="65" fill="#FFB515" font-size="24" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="2">
+    MATRIZ FODA OPERACIONAL: PROTECCIÓN VIP
+  </text>
+  <text x="500" y="90" fill="#cbd5e1" font-size="13" font-family="'Inter', sans-serif" text-anchor="middle">
+    Diagnóstico Estratégico de Capacidades y Vulnerabilidades • Policía TDF
+  </text>
+  <line x1="120" y1="110" x2="880" y2="110" stroke="#004DB3" stroke-width="1.5"/>
+
+  <!-- FORTALEZAS (TOP LEFT) -->
+  <g transform="translate(60, 130)">
+    <rect width="425" height="300" rx="14" fill="rgba(0, 50, 115, 0.65)" stroke="#22c55e" stroke-width="2"/>
+    <rect x="0" y="0" width="425" height="42" rx="14" fill="#003273"/>
+    <text x="212" y="27" fill="#22c55e" font-size="14" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">
+      FORTALEZAS (FACTORES INTERNOS (+))
+    </text>
+    <text x="20" y="70" fill="#ffffff" font-size="12" font-weight="700">✓ Personal Policial Altamente Capacitado</text>
+    <text x="35" y="90" fill="#cbd5e1" font-size="11">Instrucción avanzada en tiro táctico, TECC y custodia VIP.</text>
+
+    <text x="20" y="125" fill="#ffffff" font-size="12" font-weight="700">✓ Doctrina y Procedimientos Estandarizados</text>
+    <text x="35" y="145" fill="#cbd5e1" font-size="11">Manual de operaciones y protocolos auditados formalmente.</text>
+
+    <text x="20" y="180" fill="#ffffff" font-size="12" font-weight="700">✓ Equipamiento y Armamento Reglamentario</text>
+    <text x="35" y="200" fill="#cbd5e1" font-size="11">Comunicaciones encriptadas y vehículos adaptados para convoy.</text>
+
+    <text x="20" y="235" fill="#ffffff" font-size="12" font-weight="700">✓ Disciplina y Discreción Operativa</text>
+    <text x="35" y="255" fill="#cbd5e1" font-size="11">Cultura de bajo perfil y reserva estricta de itinerarios.</text>
+  </g>
+
+  <!-- DEBILIDADES (TOP RIGHT) -->
+  <g transform="translate(515, 130)">
+    <rect width="425" height="300" rx="14" fill="rgba(0, 50, 115, 0.65)" stroke="#FFB515" stroke-width="2"/>
+    <rect x="0" y="0" width="425" height="42" rx="14" fill="#003273"/>
+    <text x="212" y="27" fill="#FFB515" font-size="14" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">
+      DEBILIDADES (FACTORES INTERNOS (-))
+    </text>
+    <text x="20" y="70" fill="#ffffff" font-size="12" font-weight="700">⚠️ Fatiga por Servicios Prolongados</text>
+    <text x="35" y="90" fill="#cbd5e1" font-size="11">Jornadas extensas que pueden degradar el estado de alerta.</text>
+
+    <text x="20" y="125" fill="#ffffff" font-size="12" font-weight="700">⚠️ Dependencia de Rutas Críticas</text>
+    <text x="35" y="145" fill="#cbd5e1" font-size="11">Pocas vías alternativas en la geografía fueguina (Ruta 3).</text>
+
+    <text x="20" y="180" fill="#ffffff" font-size="12" font-weight="700">⚠️ Limitación de Parque Móvil Blindado</text>
+    <text x="35" y="200" fill="#cbd5e1" font-size="11">Necesidad de optimizar mantenimiento y rotación de vehículos.</text>
+
+    <text x="20" y="235" fill="#ffffff" font-size="12" font-weight="700">⚠️ Brechas en Enlace con Agencias Externas</text>
+    <text x="35" y="255" fill="#cbd5e1" font-size="11">Riesgo de compartimentación excesiva de información.</text>
+  </g>
+
+  <!-- OPORTUNIDADES (BOTTOM LEFT) -->
+  <g transform="translate(60, 450)">
+    <rect width="425" height="300" rx="14" fill="rgba(0, 50, 115, 0.65)" stroke="#0069F2" stroke-width="2"/>
+    <rect x="0" y="0" width="425" height="42" rx="14" fill="#002C66"/>
+    <text x="212" y="27" fill="#0069F2" font-size="14" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">
+      OPORTUNIDADES (FACTORES EXTERNOS (+))
+    </text>
+    <text x="20" y="70" fill="#ffffff" font-size="12" font-weight="700">💡 Integración de Drones Perimetrales</text>
+    <text x="35" y="90" fill="#cbd5e1" font-size="11">Vigilancia aérea no tripulada para avanzadas y actos públicos.</text>
+
+    <text x="20" y="125" fill="#ffffff" font-size="12" font-weight="700">💡 Red de Inteligencia Interagencial</text>
+    <text x="35" y="145" fill="#cbd5e1" font-size="11">Cooperación en tiempo real con Fuerzas Federales (PFA, GNA, PNA).</text>
+
+    <text x="20" y="180" fill="#ffffff" font-size="12" font-weight="700">💡 Plataformas Digitales de Capacitación</text>
+    <text x="35" y="200" fill="#cbd5e1" font-size="11">Actualización continua doctrinal y simuladores tácticos.</text>
+
+    <text x="20" y="235" fill="#ffffff" font-size="12" font-weight="700">💡 Monitoreo Urbano Integrado</text>
+    <text x="35" y="255" fill="#cbd5e1" font-size="11">Uso de cámaras provinciales con lectura de patentes (LPR).</text>
+  </g>
+
+  <!-- AMENAZAS (BOTTOM RIGHT) -->
+  <g transform="translate(515, 450)">
+    <rect width="425" height="300" rx="14" fill="rgba(239, 68, 68, 0.12)" stroke="#ef4444" stroke-width="2"/>
+    <rect x="0" y="0" width="425" height="42" rx="14" fill="#002C66"/>
+    <text x="212" y="27" fill="#ef4444" font-size="14" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">
+      AMENAZAS (FACTORES EXTERNOS (-))
+    </text>
+    <text x="20" y="70" fill="#ffffff" font-size="12" font-weight="700">🚨 Agresiones Armadas o Emboscadas</text>
+    <text x="35" y="90" fill="#cbd5e1" font-size="11">Ataques coordinados en puntos críticos de itinerarios fijos.</text>
+
+    <text x="20" y="125" fill="#ffffff" font-size="12" font-weight="700">🚨 Agrupaciones Hostiles y Escraches</text>
+    <text x="35" y="145" fill="#cbd5e1" font-size="11">Aglomeraciones no programadas con peligro de desborde físico.</text>
+
+    <text x="20" y="180" fill="#ffffff" font-size="12" font-weight="700">🚨 Ciberataques e Inteligencia de Fuentes Abiertas</text>
+    <text x="35" y="200" fill="#cbd5e1" font-size="11">Filtración de agendas y rastreo de celulares del entorno.</text>
+
+    <text x="20" y="235" fill="#ffffff" font-size="12" font-weight="700">🚨 Climatología Extrema Fueguina</text>
+    <text x="35" y="255" fill="#cbd5e1" font-size="11">Hielo, viento y aislamiento por temporal invernal.</text>
+  </g>
+</svg>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="50%" stop-color="#002C66"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <pattern id="roadGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowDir" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#FFB515" />
+    </marker>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect width="1200" height="700" fill="url(#roadGrid)"/>
+  <rect x="20" y="20" width="1160" height="660" rx="16" fill="none" stroke="#004DB3" stroke-width="2"/>
+
+  <!-- Header -->
+  <text x="600" y="65" fill="#FFB515" font-size="24" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="2">
+    ARQUITECTURA DEL CONVOY TÁCTICO VIP: COLUMNA DE 4 VEHÍCULOS
+  </text>
+  <text x="600" y="92" fill="#cbd5e1" font-size="13" font-family="'Inter', sans-serif" font-weight="500" text-anchor="middle">
+    Configuración de Desplazamiento en Ruta • Dinámica y Distancias Operativas de Seguridad
+  </text>
+  <line x1="100" y1="110" x2="1100" y2="110" stroke="#004DB3" stroke-width="1.5"/>
+
+  <!-- Direction of travel bar -->
+  <g transform="translate(600, 140)">
+    <line x1="-350" y1="0" x2="350" y2="0" stroke="#FFB515" stroke-width="3" stroke-dasharray="10,6" marker-end="url(#arrowDir)"/>
+    <rect x="-140" y="-14" width="280" height="28" rx="14" fill="#001f48" stroke="#FFB515" stroke-width="1.5"/>
+    <text x="0" y="5" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle" letter-spacing="1">
+      DIRECCIÓN DE AVANCE TÁCTICO
+    </text>
+  </g>
+
+  <!-- Asphalt Road representation -->
+  <rect x="50" y="200" width="1100" height="240" rx="12" fill="rgba(0, 20, 50, 0.85)" stroke="#004DB3" stroke-width="1.5"/>
+  <line x1="50" y1="320" x2="1150" y2="320" stroke="#FFB515" stroke-width="2" stroke-dasharray="25,18" opacity="0.7"/>
+
+  <!-- VEHICLE 1: EXPLORADOR / AVANZADA -->
+  <g transform="translate(180, 240)">
+    <!-- Vehicle chassis -->
+    <rect x="-35" y="0" width="70" height="150" rx="14" fill="#004DB3" stroke="#0069F2" stroke-width="2"/>
+    <rect x="-26" y="25" width="52" height="40" rx="6" fill="#001a40" stroke="#0069F2" stroke-width="1.5"/>
+    <rect x="-26" y="85" width="52" height="35" rx="6" fill="#001a40" stroke="#0069F2" stroke-width="1.5"/>
+    <!-- Headlights -->
+    <circle cx="-25" cy="5" r="5" fill="#FFEAA7"/>
+    <circle cx="25" cy="5" r="5" fill="#FFEAA7"/>
+
+    <text x="0" y="-20" fill="#0069F2" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">MÓVIL 1</text>
+    <text x="0" y="180" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">EXPLORADOR</text>
+    <text x="0" y="196" fill="#94a3b8" font-size="10.5" font-family="'Inter', sans-serif" text-anchor="middle">Avanzada / Ruta</text>
+  </g>
+
+  <!-- Distance indicator 1-2 -->
+  <g transform="translate(325, 320)">
+    <line x1="-50" y1="0" x2="50" y2="0" stroke="#0069F2" stroke-width="1.5"/>
+    <text x="0" y="-10" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">~15 m</text>
+  </g>
+
+  <!-- VEHICLE 2: PUNTA / PILOTO -->
+  <g transform="translate(460, 240)">
+    <rect x="-35" y="0" width="70" height="150" rx="14" fill="#f8fafc" stroke="#004DB3" stroke-width="2"/>
+    <rect x="-26" y="25" width="52" height="40" rx="6" fill="#002C66" stroke="#004DB3" stroke-width="1.5"/>
+    <rect x="-26" y="85" width="52" height="35" rx="6" fill="#002C66" stroke="#004DB3" stroke-width="1.5"/>
+    <!-- Police Lights Bar -->
+    <rect x="-20" y="68" width="40" height="8" rx="2" fill="#ef4444"/>
+    <rect x="0" y="68" width="20" height="8" rx="2" fill="#0069F2"/>
+    <circle cx="-25" cy="5" r="5" fill="#FFEAA7"/>
+    <circle cx="25" cy="5" r="5" fill="#FFEAA7"/>
+
+    <text x="0" y="-20" fill="#ffffff" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">MÓVIL 2</text>
+    <text x="0" y="180" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">GUÍA / PILOTO</text>
+    <text x="0" y="196" fill="#94a3b8" font-size="10.5" font-family="'Inter', sans-serif" text-anchor="middle">Patrullero policial</text>
+  </g>
+
+  <!-- Distance indicator 2-3 -->
+  <g transform="translate(605, 320)">
+    <line x1="-50" y1="0" x2="50" y2="0" stroke="#0069F2" stroke-width="1.5"/>
+    <text x="0" y="-10" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">~10 m</text>
+  </g>
+
+  <!-- VEHICLE 3: CÁPSULA VIP (GOLDEN) -->
+  <g transform="translate(740, 240)">
+    <!-- Golden halo glow -->
+    <rect x="-42" y="-6" width="84" height="162" rx="18" fill="rgba(255, 181, 21, 0.25)" stroke="#FFB515" stroke-width="2"/>
+    <!-- Vehicle chassis -->
+    <rect x="-35" y="0" width="70" height="150" rx="14" fill="#FFB515" stroke="#ffffff" stroke-width="2.5"/>
+    <rect x="-26" y="25" width="52" height="40" rx="6" fill="#001a40" stroke="#FFB515" stroke-width="1.5"/>
+    <rect x="-26" y="85" width="52" height="35" rx="6" fill="#001a40" stroke="#FFB515" stroke-width="1.5"/>
+    <circle cx="-25" cy="5" r="5" fill="#ffffff"/>
+    <circle cx="25" cy="5" r="5" fill="#ffffff"/>
+    <text x="0" y="80" fill="#000000" font-size="13" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">VIP</text>
+
+    <text x="0" y="-20" fill="#FFB515" font-size="14" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">MÓVIL A</text>
+    <text x="0" y="180" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">CÁPSULA VIP</text>
+    <text x="0" y="196" fill="#cbd5e1" font-size="10.5" font-family="'Inter', sans-serif" text-anchor="middle">Vehículo blindado</text>
+  </g>
+
+  <!-- Distance indicator 3-4 -->
+  <g transform="translate(885, 320)">
+    <line x1="-50" y1="0" x2="50" y2="0" stroke="#0069F2" stroke-width="1.5"/>
+    <text x="0" y="-10" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">~15 m</text>
+  </g>
+
+  <!-- VEHICLE 4: RETAGUARDIA / COBERTURA -->
+  <g transform="translate(1020, 240)">
+    <rect x="-35" y="0" width="70" height="150" rx="14" fill="#004DB3" stroke="#0069F2" stroke-width="2"/>
+    <rect x="-26" y="25" width="52" height="40" rx="6" fill="#001a40" stroke="#0069F2" stroke-width="1.5"/>
+    <rect x="-26" y="85" width="52" height="35" rx="6" fill="#001a40" stroke="#0069F2" stroke-width="1.5"/>
+    <circle cx="-25" cy="5" r="5" fill="#FFEAA7"/>
+    <circle cx="25" cy="5" r="5" fill="#FFEAA7"/>
+
+    <text x="0" y="-20" fill="#0069F2" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">MÓVIL 4</text>
+    <text x="0" y="180" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">RETAGUARDIA</text>
+    <text x="0" y="196" fill="#94a3b8" font-size="10.5" font-family="'Inter', sans-serif" text-anchor="middle">Bloqueo y apoyo</text>
+  </g>
+
+  <!-- Bottom Legend Box -->
+  <g transform="translate(60, 520)">
+    <rect width="1080" height="120" rx="12" fill="rgba(0, 31, 72, 0.9)" stroke="#004DB3" stroke-width="1.5"/>
+    <text x="30" y="30" fill="#FFB515" font-size="13" font-family="'Outfit', sans-serif" font-weight="800">
+      FUNCIONES Y PROTOCOLOS DE REACCIÓN EN CONVOY:
+    </text>
+    <text x="30" y="55" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif">
+      • <tspan font-weight="700" fill="#0069F2">Móvil Explorador:</tspan> Detecta cortes de ruta, semáforos, vehículos sospechosos y embudos viales con 1 km de anticipación.
+    </text>
+    <text x="30" y="75" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif">
+      • <tspan font-weight="700" fill="#ffffff">Móvil Guía (Piloto):</tspan> Abre el paso vehicular con señales sonoras/lumínicas e impone la velocidad de crucero constante.
+    </text>
+    <text x="30" y="95" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif">
+      • <tspan font-weight="700" fill="#FFB515">Móvil A (VIP):</tspan> Nunca se detiene. En caso de emboscada o agresión armada, acelera y rompe contacto inmediatamente.
+    </text>
+  </g>
+</svg>

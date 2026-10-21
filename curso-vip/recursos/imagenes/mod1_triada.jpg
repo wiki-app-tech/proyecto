@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="50%" stop-color="#002C66"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="700" fill="url(#bg)"/>
+  <rect x="24" y="24" width="952" height="652" rx="16" fill="none" stroke="#004DB3" stroke-width="2"/>
+
+  <text x="500" y="65" fill="#FFB515" font-size="24" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="2">
+    LA TRÍADA CONCEPTUAL DOCTRINARIA
+  </text>
+  <text x="500" y="90" fill="#cbd5e1" font-size="13" font-family="'Inter', sans-serif" text-anchor="middle">
+    Distinción Operativa entre Seguridad, Protección y Custodia • Policía TDF
+  </text>
+  <line x1="120" y1="110" x2="880" y2="110" stroke="#004DB3" stroke-width="1.5"/>
+
+  <!-- COL 1: SEGURIDAD -->
+  <g transform="translate(60, 140)">
+    <rect width="270" height="460" rx="14" fill="rgba(0, 50, 115, 0.65)" stroke="#004DB3" stroke-width="2"/>
+    <rect x="0" y="0" width="270" height="45" rx="14" fill="#003273"/>
+    <text x="135" y="28" fill="#FFB515" font-size="15" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">1. SEGURIDAD</text>
+
+    <!-- Icon: Balanza / Escudo -->
+    <circle cx="135" cy="100" r="38" fill="rgba(0, 105, 242, 0.25)" stroke="#FFB515" stroke-width="2"/>
+    <text x="135" y="108" fill="#FFB515" font-size="28" text-anchor="middle">⚖️</text>
+
+    <text x="135" y="165" fill="#ffffff" font-size="14" font-weight="800" text-anchor="middle">EL FIN SUPREMO</text>
+    <text x="135" y="185" fill="#0069F2" font-size="11" font-weight="700" text-anchor="middle">(Objetivo Institucional)</text>
+
+    <line x1="30" y1="205" x2="240" y2="205" stroke="#004DB3" stroke-width="1"/>
+
+    <text x="20" y="230" fill="#ffffff" font-size="11.5" font-weight="700">Definición:</text>
+    <text x="20" y="250" fill="#cbd5e1" font-size="11">Estado de tranquilidad, libertad de acción y ausencia de riesgo para el normal desempeño del dignatario.</text>
+
+    <text x="20" y="320" fill="#ffffff" font-size="11.5" font-weight="700">Dimensión:</text>
+    <text x="20" y="340" fill="#cbd5e1" font-size="11">• Psicológica y funcional.</text>
+    <text x="20" y="360" fill="#cbd5e1" font-size="11">• Continuidad institucional.</text>
+    <text x="20" y="380" fill="#cbd5e1" font-size="11">• Confianza ciudadana.</text>
+
+    <rect x="20" y="405" width="230" height="36" rx="6" fill="#001a40"/>
+    <text x="135" y="428" fill="#FFB515" font-size="10.5" font-weight="800" text-anchor="middle">"La meta final a alcanzar"</text>
+  </g>
+
+  <!-- COL 2: PROTECCIÓN -->
+  <g transform="translate(365, 140)">
+    <rect width="270" height="460" rx="14" fill="rgba(0, 50, 115, 0.65)" stroke="#FFB515" stroke-width="2.5"/>
+    <rect x="0" y="0" width="270" height="45" rx="14" fill="#002C66"/>
+    <text x="135" y="28" fill="#FFB515" font-size="15" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">2. PROTECCIÓN</text>
+
+    <!-- Icon: Escudo Blindado -->
+    <circle cx="135" cy="100" r="38" fill="rgba(255, 181, 21, 0.2)" stroke="#FFB515" stroke-width="2"/>
+    <text x="135" y="108" fill="#FFB515" font-size="28" text-anchor="middle">🛡️</text>
+
+    <text x="135" y="165" fill="#ffffff" font-size="14" font-weight="800" text-anchor="middle">EL MEDIO Y MÉTODO</text>
+    <text x="135" y="185" fill="#FFB515" font-size="11" font-weight="700" text-anchor="middle">(Procedimientos y Barreras)</text>
+
+    <line x1="30" y1="205" x2="240" y2="205" stroke="#FFB515" stroke-width="1"/>
+
+    <text x="20" y="230" fill="#ffffff" font-size="11.5" font-weight="700">Definición:</text>
+    <text x="20" y="250" fill="#cbd5e1" font-size="11">Conjunto organizado de normas, protocolos, tecnología y barreras para impedir o neutralizar agresiones.</text>
+
+    <text x="20" y="320" fill="#ffffff" font-size="11.5" font-weight="700">Dimensión:</text>
+    <text x="20" y="340" fill="#cbd5e1" font-size="11">• Vehículos blindados.</text>
+    <text x="20" y="360" fill="#cbd5e1" font-size="11">• Anillos perimétricos.</text>
+    <text x="20" y="380" fill="#cbd5e1" font-size="11">• Plan de operaciones (OPORD).</text>
+
+    <rect x="20" y="405" width="230" height="36" rx="6" fill="#001a40"/>
+    <text x="135" y="428" fill="#FFB515" font-size="10.5" font-weight="800" text-anchor="middle">"El sistema y los medios"</text>
+  </g>
+
+  <!-- COL 3: CUSTODIA -->
+  <g transform="translate(670, 140)">
+    <rect width="270" height="460" rx="14" fill="rgba(0, 50, 115, 0.65)" stroke="#004DB3" stroke-width="2"/>
+    <rect x="0" y="0" width="270" height="45" rx="14" fill="#003273"/>
+    <text x="135" y="28" fill="#FFB515" font-size="15" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">3. CUSTODIA</text>
+
+    <!-- Icon: Ojo de Vigilancia 360 -->
+    <circle cx="135" cy="100" r="38" fill="rgba(0, 105, 242, 0.25)" stroke="#FFB515" stroke-width="2"/>
+    <text x="135" y="108" fill="#FFB515" font-size="28" text-anchor="middle">👁️</text>
+
+    <text x="135" y="165" fill="#ffffff" font-size="14" font-weight="800" text-anchor="middle">LA ACCIÓN HUMANA</text>
+    <text x="135" y="185" fill="#0069F2" font-size="11" font-weight="700" text-anchor="middle">(Vigilancia Física Activa)</text>
+
+    <line x1="30" y1="205" x2="240" y2="205" stroke="#004DB3" stroke-width="1"/>
+
+    <text x="20" y="230" fill="#ffffff" font-size="11.5" font-weight="700">Definición:</text>
+    <text x="20" y="250" fill="#cbd5e1" font-size="11">Despliegue físico permanente de custodios entrenados que acompañan y protegen al dignatario en todo momento.</text>
+
+    <text x="20" y="320" fill="#ffffff" font-size="11.5" font-weight="700">Dimensión:</text>
+    <text x="20" y="340" fill="#cbd5e1" font-size="11">• Cápsula pedestre.</text>
+    <text x="20" y="360" fill="#cbd5e1" font-size="11">• Reacción inmediata C.E.E.</text>
+    <text x="20" y="380" fill="#cbd5e1" font-size="11">• Escudo balístico humano.</text>
+
+    <rect x="20" y="405" width="230" height="36" rx="6" fill="#001a40"/>
+    <text x="135" y="428" fill="#FFB515" font-size="10.5" font-weight="800" text-anchor="middle">"La persona y la acción"</text>
+  </g>
+
+  <!-- Bottom Quote -->
+  <text x="500" y="635" fill="#cbd5e1" font-size="11.5" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">
+    "La CUSTODIA aplica la PROTECCIÓN para alcanzar el fin supremo de la SEGURIDAD"
+  </text>
+</svg>

@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 44, 102, 0.85)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.85)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+  </defs>
+  
+  
+  <!-- Background -->
+  <rect width="1200" height="680" fill="url(#bgGrad)"/>
+  <rect width="1200" height="680" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="1160" height="640" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="1140" height="620" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 70 L 1160 40 L 1130 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 610 L 40 640 L 70 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 610 L 1160 640 L 1130 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header -->
+  <g transform="translate(600, 60)" text-anchor="middle">
+    <rect x="-190" y="-18" width="380" height="26" rx="13" fill="#002C66" stroke="#004DB3" stroke-width="1.2"/>
+    <text x="0" y="-1" fill="#FFB515" font-size="11" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2">
+      POLICÍA DE TIERRA DEL FUEGO • MÓDULO 8: PROTOCOLO INTEGRAL
+    </text>
+    <text x="0" y="28" fill="#ffffff" font-size="21" font-family="'Outfit', sans-serif" font-weight="900" letter-spacing="1">
+      ESQUEMA INSTITUCIONAL DE OPERACIONES Y MANDO C4I
+    </text>
+    <text x="0" y="47" fill="#94a3b8" font-size="12.5" font-family="'Inter', sans-serif">
+      Comando, Control, Comunicaciones, Cómputo e Inteligencia en Protección de Mandatarios
+    </text>
+  </g>
+  
+
+  <!-- Central C4I Architecture Diagram -->
+  <g transform="translate(60, 140)">
+    <!-- LEVEL 1: TOP PMU & COMMAND -->
+    <g transform="translate(320, 0)">
+      <rect width="440" height="90" rx="12" fill="#002C66" stroke="#FFB515" stroke-width="2.5"/>
+      <rect x="0" y="0" width="440" height="28" rx="12" fill="#003273"/>
+      <text x="220" y="19" fill="#FFB515" font-size="12" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">
+        NIVEL ESTRATÉGICO: PUESTO DE MANDO UNIFICADO (PMU)
+      </text>
+      <g transform="translate(20, 48)" font-family="'Inter', sans-serif" font-size="11" fill="#ffffff">
+        <text x="0" y="0">• Jefatura de Policía de TDF &amp; Ministerio de Seguridad</text>
+        <text x="0" y="18" fill="#cbd5e1">• Enlace con Gobernación, Poder Judicial y Fuerzas Federales</text>
+      </g>
+    </g>
+
+    <!-- Connector Line down to C4I Operations Center -->
+    <line x1="540" y1="90" x2="540" y2="135" stroke="#FFB515" stroke-width="3" marker-end="url(#arrowGold)"/>
+
+    <!-- LEVEL 2: C4I HUB -->
+    <g transform="translate(260, 140)">
+      <rect width="560" height="100" rx="12" fill="#001a40" stroke="#0069F2" stroke-width="2"/>
+      <rect x="0" y="0" width="560" height="30" rx="12" fill="#003273"/>
+      <text x="280" y="20" fill="#0069F2" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">
+        CENTRO DE COMUNICACIONES Y CONTROL C4I (USHUAIA / RÍO GRANDE)
+      </text>
+      <g transform="translate(30, 52)" font-family="'Inter', sans-serif" font-size="11" fill="#ffffff">
+        <text x="0" y="0">• Red Digital Encriptada APCO P25 / TETRA</text>
+        <text x="0" y="18" fill="#cbd5e1">• Rastreo GPS satelital en vivo de la comitiva</text>
+        <text x="280" y="0">• Cámaras de videovigilancia urbana 911</text>
+        <text x="280" y="18" fill="#cbd5e1">• Alertas meteorológicas y de rutas de Vialidad</text>
+      </g>
+    </g>
+
+    <!-- 3 Distribution Lines from C4I down to Tactical Teams -->
+    <line x1="360" y1="240" x2="160" y2="285" stroke="#0069F2" stroke-width="2" marker-end="url(#arrowBlue)"/>
+    <line x1="540" y1="240" x2="540" y2="285" stroke="#FFB515" stroke-width="3" marker-end="url(#arrowGold)"/>
+    <line x1="720" y1="240" x2="920" y2="285" stroke="#0069F2" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+    <!-- LEVEL 3: 3 OPERATIONAL UNITS -->
+    <!-- UNIT 1: EQUIPO DE AVANZADA -->
+    <g transform="translate(0, 290)">
+      <rect width="330" height="180" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="330" height="36" rx="12" fill="#003273"/>
+      <text x="165" y="23" fill="#0069F2" font-size="12" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">
+        1. EQUIPO DE AVANZADA (ADVANCE)
+      </text>
+      <g transform="translate(18, 56)" font-family="'Inter', sans-serif" font-size="11" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#0069F2">• Reconocimiento de Destino:</text>
+        <text y="16" fill="#cbd5e1">Inspección física y rutas de evacuación.</text>
+
+        <text y="42" font-weight="700" fill="#0069F2">• Barrido Antibombas y QBRN:</text>
+        <text y="58" fill="#cbd5e1">Brigada de Explosivos y Canes detectores.</text>
+
+        <text y="84" font-weight="700" fill="#0069F2">• Sala Segura (Safe Room):</text>
+        <text y="100" fill="#cbd5e1">Habitación blindada con víveres y enlace radial.</text>
+      </g>
+    </g>
+
+    <!-- UNIT 2: CÁPSULA VIP (NÚCLEO) -->
+    <g transform="translate(365, 290)">
+      <rect width="350" height="180" rx="12" fill="url(#cardGrad)" stroke="#FFB515" stroke-width="2"/>
+      <rect width="350" height="36" rx="12" fill="#002C66"/>
+      <text x="175" y="23" fill="#FFB515" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">
+        2. CÁPSULA VIP (CLOSE PROTECTION)
+      </text>
+      <g transform="translate(18, 56)" font-family="'Inter', sans-serif" font-size="11" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#FFB515">• Jefe de Seguridad (Team Leader):</text>
+        <text y="16" fill="#cbd5e1">Vínculo inmediato y pegado al mandatario.</text>
+
+        <text y="42" font-weight="700" fill="#FFB515">• Escoltas (Diamante / Cuña):</text>
+        <text y="58" fill="#cbd5e1">Cobertura 360° y absorción balística.</text>
+
+        <text y="84" font-weight="700" fill="#FFB515">• Conductor Táctico:</text>
+        <text y="100" fill="#cbd5e1">Vehículo encendido con escape garantizado.</text>
+      </g>
+    </g>
+
+    <!-- UNIT 3: GRUPO ESPECIAL / QRF -->
+    <g transform="translate(750, 290)">
+      <rect width="330" height="180" rx="12" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+      <rect width="330" height="36" rx="12" fill="#003273"/>
+      <text x="165" y="23" fill="#0069F2" font-size="12" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">
+        3. GRUPO ESPECIAL (QRF / APOYO)
+      </text>
+      <g transform="translate(18, 56)" font-family="'Inter', sans-serif" font-size="11" fill="#ffffff">
+        <text y="0" font-weight="700" fill="#0069F2">• Fuerza de Reacción Inmediata:</text>
+        <text y="16" fill="#cbd5e1">Móvil de apoyo táctico fuertemente armado.</text>
+
+        <text y="42" font-weight="700" fill="#0069F2">• Contención de Agresores:</text>
+        <text y="58" fill="#cbd5e1">Fuego de cobertura y bloqueo en emboscada.</text>
+
+        <text y="84" font-weight="700" fill="#0069F2">• Rescate y Extracción:</text>
+        <text y="100" fill="#cbd5e1">Apertura de brechas y soporte antiterrorista.</text>
+      </g>
+    </g>
+  </g>
+</svg>

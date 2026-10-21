@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="720" viewBox="0 0 1000 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="50%" stop-color="#002C66"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="720" fill="url(#bg)"/>
+  <rect x="24" y="24" width="952" height="672" rx="16" fill="none" stroke="#004DB3" stroke-width="2"/>
+
+  <!-- Title Header -->
+  <text x="500" y="65" fill="#FFB515" font-size="24" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="2">
+    SISTEMA DE CÓDIGOS DE ALERTA DE COOPER
+  </text>
+  <text x="500" y="90" fill="#cbd5e1" font-size="13" font-family="'Inter', sans-serif" text-anchor="middle">
+    Escala Psicofisiológica de Conciencia Situacional para Custodios de Dignatarios
+  </text>
+  <line x1="100" y1="110" x2="900" y2="110" stroke="#004DB3" stroke-width="1.5"/>
+
+  <!-- NIVEL 1: BLANCO -->
+  <g transform="translate(60, 135)">
+    <rect width="880" height="110" rx="12" fill="rgba(241, 245, 249, 0.08)" stroke="#f1f5f9" stroke-width="2"/>
+    <rect x="15" y="15" width="200" height="80" rx="8" fill="#f1f5f9"/>
+    <text x="115" y="48" fill="#000000" font-size="14" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">CÓDIGO BLANCO</text>
+    <text x="115" y="70" fill="#334155" font-size="11" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">DESPREVENIDO</text>
+
+    <text x="240" y="45" fill="#ffffff" font-size="14" font-family="'Inter', sans-serif" font-weight="700">Estado Mental: Distraído / Despreocupado</text>
+    <text x="240" y="70" fill="#cbd5e1" font-size="12" font-family="'Inter', sans-serif">• Atención nula al entorno. Tiempo de reacción muy lento.</text>
+    <text x="240" y="90" fill="#ef4444" font-size="12" font-family="'Inter', sans-serif" font-weight="700">⛔ PROHIBIDO PARA UN CUSTODIO EN SERVICIO ACTIVO.</text>
+  </g>
+
+  <!-- NIVEL 2: AMARILLO -->
+  <g transform="translate(60, 265)">
+    <rect width="880" height="110" rx="12" fill="rgba(255, 181, 21, 0.12)" stroke="#FFB515" stroke-width="2.5"/>
+    <rect x="15" y="15" width="200" height="80" rx="8" fill="#FFB515"/>
+    <text x="115" y="48" fill="#000000" font-size="14" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">CÓDIGO AMARILLO</text>
+    <text x="115" y="70" fill="#000000" font-size="11" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">ALERTA RELAJADA</text>
+
+    <text x="240" y="45" fill="#FFB515" font-size="14" font-family="'Inter', sans-serif" font-weight="700">Estado Mental: Conciencia 360° Sostenible</text>
+    <text x="240" y="70" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif">• Observación constante sin estrés excesivo. Rastreo de manos y miradas.</text>
+    <text x="240" y="90" fill="#22c55e" font-size="12" font-family="'Inter', sans-serif" font-weight="700">✓ ESTADO OPERATIVO BASE DURANTE TODA LA JORNADA.</text>
+  </g>
+
+  <!-- NIVEL 3: NARANJA -->
+  <g transform="translate(60, 395)">
+    <rect width="880" height="110" rx="12" fill="rgba(249, 115, 22, 0.12)" stroke="#f97316" stroke-width="2.5"/>
+    <rect x="15" y="15" width="200" height="80" rx="8" fill="#f97316"/>
+    <text x="115" y="48" fill="#ffffff" font-size="14" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">CÓDIGO NARANJA</text>
+    <text x="115" y="70" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">ALERTA ESPECÍFICA</text>
+
+    <text x="240" y="45" fill="#f97316" font-size="14" font-family="'Inter', sans-serif" font-weight="700">Estado Mental: Amenaza Potencial Identificada</text>
+    <text x="240" y="70" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif">• Foco en una anomalía: individuo sospechoso, vehículo sin patente, corte de ruta.</text>
+    <text x="240" y="90" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="700">• Preparación de extracción: "Si da dos pasos más, evacuamos".</text>
+  </g>
+
+  <!-- NIVEL 4: ROJO -->
+  <g transform="translate(60, 525)">
+    <rect width="880" height="110" rx="12" fill="rgba(239, 68, 68, 0.15)" stroke="#ef4444" stroke-width="2.5"/>
+    <rect x="15" y="15" width="200" height="80" rx="8" fill="#ef4444"/>
+    <text x="115" y="48" fill="#ffffff" font-size="14" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">CÓDIGO ROJO</text>
+    <text x="115" y="70" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" font-weight="800" text-anchor="middle">COMBATE Y EVACUAR</text>
+
+    <text x="240" y="45" fill="#ef4444" font-size="14" font-family="'Inter', sans-serif" font-weight="700">Estado Mental: Agresión en Curso (Acción Inmediata)</text>
+    <text x="240" y="70" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif">• Se desata el ataque. Disparo, explosión o agresión física violenta.</text>
+    <text x="240" y="90" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="700">• PROTOCOLO C.E.E.: Cubrir con el cuerpo, Evacuar al VIP y Escapar.</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="500" y="675" fill="#94a3b8" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">
+    Doctrina Policial de Tierra del Fuego • Transición Inmediata según Dinámica del Escenario
+  </text>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="50%" stop-color="#002C66"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="650" fill="url(#bg)"/>
+  <rect x="24" y="24" width="952" height="602" rx="16" fill="none" stroke="#004DB3" stroke-width="2"/>
+
+  <text x="500" y="70" fill="#FFB515" font-size="24" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="2">
+    LA ECUACIÓN DEL RIESGO EN PROTECCIÓN VIP
+  </text>
+  <text x="500" y="96" fill="#cbd5e1" font-size="13" font-family="'Inter', sans-serif" text-anchor="middle">
+    Fórmula Fundamental de Evaluación y Mitigación Operativa
+  </text>
+  <line x1="150" y1="115" x2="850" y2="115" stroke="#004DB3" stroke-width="1.5"/>
+
+  <!-- BOX 1: AMENAZA -->
+  <g transform="translate(70, 160)">
+    <rect width="230" height="200" rx="12" fill="rgba(0, 50, 115, 0.7)" stroke="#0069F2" stroke-width="2"/>
+    <rect x="0" y="0" width="230" height="38" rx="12" fill="#003273"/>
+    <text x="115" y="25" fill="#FFB515" font-size="13" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">AMENAZA (A)</text>
+    
+    <text x="115" y="80" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">Agresores y Peligros</text>
+    <text x="15" y="115" fill="#cbd5e1" font-size="11">• Atentados directos</text>
+    <text x="15" y="135" fill="#cbd5e1" font-size="11">• Desórdenes masivos</text>
+    <text x="15" y="155" fill="#cbd5e1" font-size="11">• Francotiradores / Drones</text>
+    <text x="15" y="180" fill="#0069F2" font-size="10.5" font-weight="700">(Factor Externo / Agresor)</text>
+  </g>
+
+  <!-- MULTIPLY ICON -->
+  <text x="345" y="275" fill="#FFB515" font-size="48" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">×</text>
+
+  <!-- BOX 2: VULNERABILIDAD -->
+  <g transform="translate(385, 160)">
+    <rect width="230" height="200" rx="12" fill="rgba(0, 50, 115, 0.7)" stroke="#0069F2" stroke-width="2"/>
+    <rect x="0" y="0" width="230" height="38" rx="12" fill="#003273"/>
+    <text x="115" y="25" fill="#FFB515" font-size="13" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">VULNERABILIDAD (V)</text>
+
+    <text x="115" y="80" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">Brechas y Fallas</text>
+    <text x="15" y="115" fill="#cbd5e1" font-size="11">• Rutas predecibles</text>
+    <text x="15" y="135" fill="#cbd5e1" font-size="11">• Escolta insuficiente</text>
+    <text x="15" y="155" fill="#cbd5e1" font-size="11">• Accesos sin control</text>
+    <text x="15" y="180" fill="#0069F2" font-size="10.5" font-weight="700">(Factor Interno / Sistema)</text>
+  </g>
+
+  <!-- EQUALS ICON -->
+  <text x="660" y="275" fill="#FFB515" font-size="48" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">=</text>
+
+  <!-- BOX 3: RIESGO -->
+  <g transform="translate(700, 160)">
+    <rect width="230" height="200" rx="12" fill="rgba(239, 68, 68, 0.15)" stroke="#ef4444" stroke-width="2.5"/>
+    <rect x="0" y="0" width="230" height="38" rx="12" fill="#ef4444"/>
+    <text x="115" y="25" fill="#ffffff" font-size="13" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">RIESGO TÁCTICO (R)</text>
+
+    <text x="115" y="80" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">Probabilidad × Daño</text>
+    <text x="15" y="115" fill="#ffffff" font-size="11">• Lesión al dignatario</text>
+    <text x="15" y="135" fill="#ffffff" font-size="11">• Interrupción funcional</text>
+    <text x="15" y="155" fill="#ffffff" font-size="11">• Crisis institucional</text>
+    <text x="15" y="180" fill="#ef4444" font-size="10.5" font-weight="800">(Resultado Crítico)</text>
+  </g>
+
+  <!-- SYSTEM OF PROTECTION (LOWER PANEL) -->
+  <g transform="translate(100, 405)">
+    <rect width="800" height="175" rx="14" fill="rgba(0, 31, 72, 0.9)" stroke="#FFB515" stroke-width="2"/>
+    <text x="400" y="32" fill="#FFB515" font-size="15" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="1">
+      EL BLINDAJE: SISTEMA INTEGRAL DE PROTECCIÓN (DIVISOR DEL RIESGO)
+    </text>
+    <text x="50" y="70" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif">
+      🛡️ <tspan font-weight="700" fill="#FFB515">No podemos eliminar la Amenaza</tspan> (agresores siempre existen en el entorno social).
+    </text>
+    <text x="50" y="100" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif">
+      🎯 <tspan font-weight="700" fill="#22c55e">Nuestra misión es reducir la Vulnerabilidad a CERO</tspan> mediante doctrina, blindaje, avanzadas y disciplina.
+    </text>
+    <text x="50" y="130" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif">
+      ⚡ <tspan font-weight="700" fill="#0069F2">Conclusión Operativa:</tspan> Si la Vulnerabilidad tiende a cero, el Riesgo tiende a ser NULO.
+    </text>
+  </g>
+</svg>

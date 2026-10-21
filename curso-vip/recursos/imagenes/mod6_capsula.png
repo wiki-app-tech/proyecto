@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+  
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 44, 102, 0.85)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.85)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+  </defs>
+  
+  
+  <!-- Background -->
+  <rect width="1200" height="680" fill="url(#bgGrad)"/>
+  <rect width="1200" height="680" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="1160" height="640" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="1140" height="620" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 70 L 1160 40 L 1130 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 610 L 40 640 L 70 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 1160 610 L 1160 640 L 1130 640" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header -->
+  <g transform="translate(600, 60)" text-anchor="middle">
+    <rect x="-190" y="-18" width="380" height="26" rx="13" fill="#002C66" stroke="#004DB3" stroke-width="1.2"/>
+    <text x="0" y="-1" fill="#FFB515" font-size="11" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2">
+      POLICÍA DE TIERRA DEL FUEGO • BIOSEGURIDAD VEHICULAR
+    </text>
+    <text x="0" y="28" fill="#ffffff" font-size="21" font-family="'Outfit', sans-serif" font-weight="900" letter-spacing="1">
+      CONTROL DE PUNTOS CRÍTICOS EN LA CÁPSULA VIP
+    </text>
+    <text x="0" y="47" fill="#94a3b8" font-size="12.5" font-family="'Inter', sans-serif">
+      Blindaje Biológico, Aislamiento de Habitáculo y Presurización de Emergencia
+    </text>
+  </g>
+  
+
+  <!-- Central Tactical SUV Silhouette Diagram -->
+  <g transform="translate(100, 160)">
+    <!-- Vehicle Base Frame Card -->
+    <rect width="1000" height="460" rx="14" fill="url(#cardGrad)" stroke="#004DB3" stroke-width="1.5"/>
+
+    <!-- Tactical Vehicle Silhouette Blueprint -->
+    <g transform="translate(180, 70)">
+      <!-- Ground Line -->
+      <line x1="-30" y1="210" x2="680" y2="210" stroke="#004DB3" stroke-width="2" stroke-dasharray="8,6"/>
+
+      <!-- SUV Body Silhouette -->
+      <path d="M 0 170 L 40 170 L 60 120 L 150 110 L 220 50 L 460 50 L 530 110 L 610 120 L 630 170 L 610 170 A 45 45 0 0 1 520 170 L 180 170 A 45 45 0 0 1 90 170 Z" 
+            fill="#002C66" stroke="#0069F2" stroke-width="3"/>
+      
+      <!-- Cabin Windows Glass -->
+      <path d="M 230 60 L 320 60 L 320 105 L 180 105 Z" fill="rgba(0, 105, 242, 0.35)" stroke="#FFB515" stroke-width="1.5"/>
+      <path d="M 335 60 L 440 60 L 495 105 L 335 105 Z" fill="rgba(0, 105, 242, 0.35)" stroke="#FFB515" stroke-width="1.5"/>
+      
+      <!-- Wheels -->
+      <circle cx="135" cy="170" r="38" fill="#001433" stroke="#FFB515" stroke-width="4"/>
+      <circle cx="135" cy="170" r="20" fill="#002C66" stroke="#0069F2" stroke-width="2"/>
+      
+      <circle cx="565" cy="170" r="38" fill="#001433" stroke="#FFB515" stroke-width="4"/>
+      <circle cx="565" cy="170" r="20" fill="#002C66" stroke="#0069F2" stroke-width="2"/>
+
+      <!-- Air Flow Positive Pressure Stream -->
+      <path d="M 120 70 Q 200 20 320 40 Q 450 20 550 60" fill="none" stroke="#FFB515" stroke-width="2" stroke-dasharray="6,4"/>
+      <text x="340" y="30" fill="#FFB515" font-size="11" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">
+        PRESURIZACIÓN POSITIVA (+ΔP)
+      </text>
+
+      <!-- POINT 1: FILTROS HEPA -->
+      <g transform="translate(60, 100)">
+        <circle cx="0" cy="0" r="14" fill="#FFB515" stroke="#ffffff" stroke-width="2"/>
+        <text x="0" y="4" fill="#000000" font-size="11" font-weight="900" font-family="'Inter', sans-serif" text-anchor="middle">1</text>
+        <line x1="0" y1="-14" x2="-20" y2="-45" stroke="#FFB515" stroke-width="1.5"/>
+        <rect x="-140" y="-75" width="120" height="36" rx="6" fill="#001433" stroke="#FFB515" stroke-width="1"/>
+        <text x="-80" y="-58" fill="#ffffff" font-size="10" font-weight="700" font-family="'Inter', sans-serif" text-anchor="middle">TOMA FILTRO HEPA</text>
+        <text x="-80" y="-45" fill="#cbd5e1" font-size="9" font-family="'Inter', sans-serif" text-anchor="middle">Retención 99.97%</text>
+      </g>
+
+      <!-- POINT 2: SELLADO BURLETES -->
+      <g transform="translate(330, 110)">
+        <circle cx="0" cy="0" r="14" fill="#0069F2" stroke="#ffffff" stroke-width="2"/>
+        <text x="0" y="4" fill="#ffffff" font-size="11" font-weight="900" font-family="'Inter', sans-serif" text-anchor="middle">2</text>
+        <line x1="0" y1="14" x2="0" y2="45" stroke="#0069F2" stroke-width="1.5"/>
+        <rect x="-60" y="45" width="120" height="36" rx="6" fill="#001433" stroke="#0069F2" stroke-width="1"/>
+        <text x="0" y="62" fill="#ffffff" font-size="10" font-weight="700" font-family="'Inter', sans-serif" text-anchor="middle">SELLADO ESTANCO</text>
+        <text x="0" y="75" fill="#cbd5e1" font-size="9" font-family="'Inter', sans-serif" text-anchor="middle">Burletes dobles EPDM</text>
+      </g>
+
+      <!-- POINT 3: CATERING VIP -->
+      <g transform="translate(420, 80)">
+        <circle cx="0" cy="0" r="14" fill="#FFB515" stroke="#ffffff" stroke-width="2"/>
+        <text x="0" y="4" fill="#000000" font-size="11" font-weight="900" font-family="'Inter', sans-serif" text-anchor="middle">3</text>
+        <line x1="0" y1="-14" x2="30" y2="-45" stroke="#FFB515" stroke-width="1.5"/>
+        <rect x="30" y="-75" width="130" height="36" rx="6" fill="#001433" stroke="#FFB515" stroke-width="1"/>
+        <text x="95" y="-58" fill="#ffffff" font-size="10" font-weight="700" font-family="'Inter', sans-serif" text-anchor="middle">ZONA HIDRATACIÓN</text>
+        <text x="95" y="-45" fill="#cbd5e1" font-size="9" font-family="'Inter', sans-serif" text-anchor="middle">Sello Inviolable Táctico</text>
+      </g>
+
+      <!-- POINT 4: KIT DESCONTAMINACIÓN -->
+      <g transform="translate(580, 110)">
+        <circle cx="0" cy="0" r="14" fill="#0069F2" stroke="#ffffff" stroke-width="2"/>
+        <text x="0" y="4" fill="#ffffff" font-size="11" font-weight="900" font-family="'Inter', sans-serif" text-anchor="middle">4</text>
+        <line x1="0" y1="-14" x2="20" y2="-45" stroke="#0069F2" stroke-width="1.5"/>
+        <rect x="20" y="-75" width="130" height="36" rx="6" fill="#001433" stroke="#0069F2" stroke-width="1"/>
+        <text x="85" y="-58" fill="#ffffff" font-size="10" font-weight="700" font-family="'Inter', sans-serif" text-anchor="middle">KIT DESCONTAM.</text>
+        <text x="85" y="-45" fill="#cbd5e1" font-size="9" font-family="'Inter', sans-serif" text-anchor="middle">Solución Hipoclorito</text>
+      </g>
+    </g>
+
+    <!-- Bottom Tactical Specs Strip -->
+    <g transform="translate(40, 340)">
+      <rect width="920" height="95" rx="10" fill="#001433" stroke="#004DB3" stroke-width="1.5"/>
+      <g transform="translate(20, 24)" font-family="'Inter', sans-serif" font-size="11">
+        <text x="0" y="0" fill="#FFB515" font-weight="700">PROTOCOLO DE ACCESO:</text>
+        <text x="0" y="20" fill="#ffffff">• Aislamiento antes del abordaje del VIP.</text>
+        <text x="0" y="38" fill="#cbd5e1">• Recirculación forzada permanente activada.</text>
+        
+        <text x="320" y="0" fill="#FFB515" font-weight="700">FILTRADO DE PARTICULADOS:</text>
+        <text x="320" y="20" fill="#ffffff">• Bloqueo de esporas de carbunco y ricina.</text>
+        <text x="320" y="38" fill="#cbd5e1">• Despresurización controlada en punto seguro.</text>
+
+        <text x="640" y="0" fill="#FFB515" font-weight="700">EMERGENCIA TÁCTICA:</text>
+        <text x="640" y="20" fill="#ffffff">• En caso de brecha: máscara en marcha.</text>
+        <text x="640" y="38" fill="#cbd5e1">• Maniobra de escape inmediata sin frenado.</text>
+      </g>
+    </g>
+  </g>
+</svg>

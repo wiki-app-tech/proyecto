@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="850" viewBox="0 0 900 850">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="50%" stop-color="#002C66"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="rgba(0, 105, 242, 0.15)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="850" fill="url(#bg)"/>
+  <rect width="900" height="850" fill="url(#grid)"/>
+  <rect x="24" y="24" width="852" height="802" rx="16" fill="none" stroke="#004DB3" stroke-width="2"/>
+
+  <!-- Title Header -->
+  <text x="450" y="65" fill="#FFB515" font-size="22" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="2">
+    MATRIZ DE EVALUACIÓN DE RIESGOS TÁCTICOS (2×2)
+  </text>
+  <text x="450" y="90" fill="#cbd5e1" font-size="13" font-family="'Inter', sans-serif" text-anchor="middle">
+    Clasificación por Probabilidad de Ocurrencia e Impacto en la Misión
+  </text>
+  <line x1="120" y1="108" x2="780" y2="108" stroke="#004DB3" stroke-width="1.5"/>
+
+  <!-- AXES LABELS -->
+  <!-- Vertical Axis: Probabilidad -->
+  <g transform="translate(60, 440) rotate(-90)">
+    <text x="0" y="0" fill="#FFB515" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="2">
+      PROBABILIDAD DE OCURRENCIA ➔
+    </text>
+  </g>
+
+  <!-- Horizontal Axis: Impacto -->
+  <text x="490" y="740" fill="#FFB515" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="2">
+    SEVERIDAD DEL IMPACTO ➔
+  </text>
+
+  <!-- THE 2x2 MATRIX CONTAINER -->
+  <g transform="translate(130, 140)">
+    <!-- GRID AXIS LABELS -->
+    <text x="-15" y="145" fill="#ffffff" font-size="12" font-weight="700" text-anchor="end">ALTA</text>
+    <text x="-15" y="425" fill="#ffffff" font-size="12" font-weight="700" text-anchor="end">BAJA</text>
+    <text x="175" y="580" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">LEVE / MENOR</text>
+    <text x="525" y="580" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">CRÍTICO / SEVERO</text>
+
+    <!-- CUADRANTE 2 (TOP LEFT): RIESGO MARGINAL -->
+    <rect x="0" y="0" width="350" height="270" fill="rgba(0, 105, 242, 0.2)" stroke="#004DB3" stroke-width="2"/>
+    <rect x="15" y="15" width="320" height="32" rx="6" fill="#003273"/>
+    <text x="175" y="36" fill="#0069F2" font-size="12" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">
+      CUADRANTE 2: RIESGO MARGINAL
+    </text>
+    <text x="25" y="75" fill="#ffffff" font-size="12" font-weight="700">Probabilidad Alta • Impacto Leve</text>
+    <text x="25" y="105" fill="#cbd5e1" font-size="11">• Retrasos de tránsito rutinarios.</text>
+    <text x="25" y="125" fill="#cbd5e1" font-size="11">• Protestas pacíficas distantes.</text>
+    <text x="25" y="145" fill="#cbd5e1" font-size="11">• Periodistas no acreditados.</text>
+    <rect x="25" y="200" width="300" height="42" rx="6" fill="#001a40" stroke="#0069F2" stroke-width="1"/>
+    <text x="175" y="226" fill="#0069F2" font-size="11" font-weight="800" text-anchor="middle">ACCIÓN: MITIGAR / PLAN B</text>
+
+    <!-- CUADRANTE 4 (TOP RIGHT): ZONA CRÍTICA (RED STRIPED) -->
+    <rect x="350" y="0" width="350" height="270" fill="rgba(239, 68, 68, 0.25)" stroke="#ef4444" stroke-width="3"/>
+    <rect x="365" y="15" width="320" height="32" rx="6" fill="#ef4444"/>
+    <text x="525" y="36" fill="#ffffff" font-size="12" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">
+      CUADRANTE 4: ¡ZONA CRÍTICA!
+    </text>
+    <text x="375" y="75" fill="#ffffff" font-size="12" font-weight="800">Probabilidad Alta • Impacto Crítico</text>
+    <text x="375" y="105" fill="#ffffff" font-size="11">• Emboscada armada en ruta prevista.</text>
+    <text x="375" y="125" fill="#ffffff" font-size="11">• Amenaza de bomba con artefacto verificado.</text>
+    <text x="375" y="145" fill="#ffffff" font-size="11">• Pérdida total de la cápsula.</text>
+    <rect x="375" y="200" width="300" height="42" rx="6" fill="#991b1b" stroke="#ffffff" stroke-width="1"/>
+    <text x="525" y="226" fill="#ffffff" font-size="11" font-weight="900" text-anchor="middle">ACCIÓN: EVACUAR / CANCELAR ACTO</text>
+
+    <!-- CUADRANTE 1 (BOTTOM LEFT): RIESGO ACEPTABLE -->
+    <rect x="0" y="270" width="350" height="270" fill="rgba(34, 197, 94, 0.1)" stroke="#004DB3" stroke-width="2"/>
+    <rect x="15" y="285" width="320" height="32" rx="6" fill="#003273"/>
+    <text x="175" y="306" fill="#22c55e" font-size="12" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">
+      CUADRANTE 1: RIESGO ACEPTABLE
+    </text>
+    <text x="25" y="345" fill="#ffffff" font-size="12" font-weight="700">Probabilidad Baja • Impacto Leve</text>
+    <text x="25" y="375" fill="#cbd5e1" font-size="11">• Llovizna menor o viento moderado.</text>
+    <text x="25" y="395" fill="#cbd5e1" font-size="11">• Preguntas imprevistas de público.</text>
+    <text x="25" y="415" fill="#cbd5e1" font-size="11">• Falla menor de micrófono.</text>
+    <rect x="25" y="470" width="300" height="42" rx="6" fill="#001a40" stroke="#22c55e" stroke-width="1"/>
+    <text x="175" y="496" fill="#22c55e" font-size="11" font-weight="800" text-anchor="middle">ACCIÓN: MONITOREAR</text>
+
+    <!-- CUADRANTE 3 (BOTTOM RIGHT): RIESGO TRANSFERIBLE -->
+    <rect x="350" y="270" width="350" height="270" fill="rgba(255, 181, 21, 0.15)" stroke="#FFB515" stroke-width="2"/>
+    <rect x="365" y="285" width="320" height="32" rx="6" fill="#003273"/>
+    <text x="525" y="306" fill="#FFB515" font-size="12" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">
+      CUADRANTE 3: RIESGO TRANSFERIBLE
+    </text>
+    <text x="375" y="345" fill="#ffffff" font-size="12" font-weight="700">Probabilidad Baja • Impacto Crítico</text>
+    <text x="375" y="375" fill="#cbd5e1" font-size="11">• Atentado terrorista sofisticado.</text>
+    <text x="375" y="395" fill="#cbd5e1" font-size="11">• Falla médica catastrófica súbita.</text>
+    <text x="375" y="415" fill="#cbd5e1" font-size="11">• Accidente aéreo en traslado.</text>
+    <rect x="375" y="470" width="300" height="42" rx="6" fill="#001a40" stroke="#FFB515" stroke-width="1"/>
+    <text x="525" y="496" fill="#FFB515" font-size="11" font-weight="800" text-anchor="middle">ACCIÓN: DELEGAR / CONTINGENCIA</text>
+  </g>
+</svg>
