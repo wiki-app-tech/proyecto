@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+    
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 50, 115, 0.9)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.9)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+    
+  <!-- Background -->
+  <rect width="900" height="500" fill="url(#bgGrad)"/>
+  <rect width="900" height="500" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="860" height="460" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="840" height="440" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 70 L 860 40 L 830 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 430 L 40 460 L 70 460" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 430 L 860 460 L 830 460" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header Badge -->
+  <rect x="230" y="45" width="440" height="30" rx="15" fill="rgba(0, 44, 102, 0.95)" stroke="#004DB3" stroke-width="1.5"/>
+  <text x="450" y="65" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2.5" text-anchor="middle">
+    POLICÍA DE TIERRA DEL FUEGO • ESCALABILIDAD OPERATIVA
+  </text>
+
+  <!-- Title & Subtitle -->
+  <text x="450" y="112" fill="#ffffff" font-size="24" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="0.5">
+    MATRIZ DE NIVELES DE OPERACIÓN
+  </text>
+  <text x="450" y="138" fill="#7FB3FF" font-size="14" font-family="'Inter', sans-serif" font-weight="500" text-anchor="middle">
+    Despliegue Progresivo según el Nivel de Amenaza
+  </text>
+
+  <line x1="200" y1="155" x2="430" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  <polygon points="450,150 457,155 450,160 443,155" fill="#FFB515"/>
+  <line x1="470" y1="155" x2="700" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  
+
+    <!-- 3 Rows / Cards for Level 1, 2, 3 -->
+    <!-- Level 1 -->
+    <rect x="60" y="180" width="780" height="85" rx="12" fill="url(#cardGrad)" stroke="#f87171" stroke-width="2"/>
+    <circle cx="110" cy="222" r="24" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
+    <text x="110" y="230" fill="#ffffff" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">L1</text>
+    <text x="155" y="212" fill="#ef4444" font-size="16" font-family="'Outfit', sans-serif" font-weight="800">LEVEL 1: MÁXIMA SEGURIDAD (ROJO / PICO)</text>
+    <text x="155" y="232" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif">Amenaza letal confirmada / Atentado activo / Entorno altamente hostil</text>
+    <text x="155" y="252" fill="#fca5a5" font-size="12" font-family="'Inter', sans-serif" font-weight="600">Despliegue total: Móvil A blindado + 2 motos control + G.A.T. + Francotiradores + PEX activo</text>
+
+    <!-- Level 2 -->
+    <rect x="60" y="280" width="780" height="85" rx="12" fill="url(#cardGrad)" stroke="#fb923c" stroke-width="2"/>
+    <circle cx="110" cy="322" r="24" fill="#7c2d12" stroke="#f97316" stroke-width="2"/>
+    <text x="110" y="330" fill="#ffffff" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">L2</text>
+    <text x="155" y="312" fill="#fb923c" font-size="16" font-family="'Outfit', sans-serif" font-weight="800">LEVEL 2: EMERGENCIA INMINENTE (NARANJA / MEDIO)</text>
+    <text x="155" y="332" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif">Atentado frustrado / Clima político tenso / Manifestaciones masivas no controladas</text>
+    <text x="155" y="352" fill="#fdba74" font-size="12" font-family="'Inter', sans-serif" font-weight="600">Despliegue reforzado: Móvil Puntero + Brigada completa + Cuarto Seguro listo + Rutas alternas</text>
+
+    <!-- Level 3 -->
+    <rect x="60" y="380" width="780" height="85" rx="12" fill="url(#cardGrad)" stroke="#facc15" stroke-width="2"/>
+    <circle cx="110" cy="422" r="24" fill="#713f12" stroke="#eab308" stroke-width="2"/>
+    <text x="110" y="430" fill="#ffffff" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">L3</text>
+    <text x="155" y="412" fill="#facc15" font-size="16" font-family="'Outfit', sans-serif" font-weight="800">LEVEL 3: ALERTA BASE (AMARILLO / ESTÁNDAR)</text>
+    <text x="155" y="432" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif">Operación de rutina gubernamental / Amenaza potencial no especificada</text>
+    <text x="155" y="452" fill="#fef08a" font-size="12" font-family="'Inter', sans-serif" font-weight="600">Despliegue base: Móvil A + Móvil Piloto + Móvil Adelantado + Puestos estáticos en destino</text>
+  </svg>

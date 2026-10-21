@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+    
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 50, 115, 0.9)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.9)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+    
+  <!-- Background -->
+  <rect width="900" height="500" fill="url(#bgGrad)"/>
+  <rect width="900" height="500" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="860" height="460" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="840" height="440" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 70 L 860 40 L 830 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 430 L 40 460 L 70 460" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 430 L 860 460 L 830 460" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header Badge -->
+  <rect x="230" y="45" width="440" height="30" rx="15" fill="rgba(0, 44, 102, 0.95)" stroke="#004DB3" stroke-width="1.5"/>
+  <text x="450" y="65" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2.5" text-anchor="middle">
+    POLICÍA DE TIERRA DEL FUEGO • RESPUESTA A CONTAMINACIÓN
+  </text>
+
+  <!-- Title & Subtitle -->
+  <text x="450" y="112" fill="#ffffff" font-size="24" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="0.5">
+    PROTOCOLOS DE AISLAMIENTO Y CUARENTENA TÁCTICA
+  </text>
+  <text x="450" y="138" fill="#7FB3FF" font-size="14" font-family="'Inter', sans-serif" font-weight="500" text-anchor="middle">
+    Diferenciación Operativa: Aislamiento Activo (Caso) vs. Cuarentena (Contactos)
+  </text>
+
+  <line x1="200" y1="155" x2="430" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  <polygon points="450,150 457,155 450,160 443,155" fill="#FFB515"/>
+  <line x1="470" y1="155" x2="700" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  
+
+    <!-- Protocol 1: Aislamiento Activo -->
+    <rect x="70" y="190" width="340" height="240" rx="12" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="2"/>
+    <rect x="70" y="190" width="340" height="40" rx="12" fill="#7f1d1d"/>
+    <text x="240" y="216" fill="#fca5a5" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">PROTOCOLO 1: AISLAMIENTO</text>
+    <text x="240" y="250" fill="#ef4444" font-size="12" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">Amenaza Activa / Caso Sintomático</text>
+    <text x="95" y="280" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="600">• Extracción Inmediata:</text>
+    <text x="95" y="300" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif">  Retirar al operador de la cápsula y del convoy.</text>
+    <text x="95" y="325" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="600">• Traslado a Zona Roja:</text>
+    <text x="95" y="345" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif">  Alojamiento sanitario predesignado por Avanzada.</text>
+    <text x="95" y="370" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="600">• Desinfección Profunda:</text>
+    <text x="95" y="390" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif">  Two-Step del vehículo y radio utilizada.</text>
+    <text x="240" y="418" fill="#ef4444" font-size="11" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">NEUTRALIZACIÓN DEL FOCO</text>
+
+    <!-- Protocol 2: Cuarentena Táctica -->
+    <rect x="490" y="190" width="340" height="240" rx="12" fill="url(#cardGrad)" stroke="#facc15" stroke-width="2"/>
+    <rect x="490" y="190" width="340" height="40" rx="12" fill="#713f12"/>
+    <text x="660" y="216" fill="#fef08a" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">PROTOCOLO 2: CUARENTENA</text>
+    <text x="660" y="250" fill="#facc15" font-size="12" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">Riesgo Latente / Contactos Estrechos</text>
+    <text x="515" y="280" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="600">• Trazabilidad de Contactos:</text>
+    <text x="515" y="300" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif">  Identificar quiénes compartieron habitáculo.</text>
+    <text x="515" y="325" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="600">• Restricción Preventiva:</text>
+    <text x="515" y="345" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif">  Aislamiento transitorio en espera de test rápido.</text>
+    <text x="515" y="370" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="600">• Activación de Relevo:</text>
+    <text x="515" y="390" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif">  Ingreso inmediato de la célula de reserva.</text>
+    <text x="660" y="418" fill="#facc15" font-size="11" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">CONTENCIÓN DE PROPAGACIÓN</text>
+
+    <text x="450" y="465" fill="#cbd5e1" font-size="12" font-family="'Inter', sans-serif" text-anchor="middle">
+      "La bioseguridad no negocia: todo caso sospechoso se extrae para preservar al resto del equipo"
+    </text>
+  </svg>

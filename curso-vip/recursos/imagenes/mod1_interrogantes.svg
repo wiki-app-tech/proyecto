@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
+    
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 50, 115, 0.9)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.9)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+    
+  <!-- Background -->
+  <rect width="900" height="540" fill="url(#bgGrad)"/>
+  <rect width="900" height="540" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="860" height="500" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="840" height="480" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 70 L 860 40 L 830 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 470 L 40 500 L 70 500" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 470 L 860 500 L 830 500" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header Badge -->
+  <rect x="230" y="45" width="440" height="30" rx="15" fill="rgba(0, 44, 102, 0.95)" stroke="#004DB3" stroke-width="1.5"/>
+  <text x="450" y="65" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2.5" text-anchor="middle">
+    POLICÍA DE TIERRA DEL FUEGO • INTELIGENCIA PROTECTIVA
+  </text>
+
+  <!-- Title & Subtitle -->
+  <text x="450" y="112" fill="#ffffff" font-size="24" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="0.5">
+    LAS 5 INTERROGANTES ESENCIALES DEL VIP
+  </text>
+  <text x="450" y="138" fill="#7FB3FF" font-size="14" font-family="'Inter', sans-serif" font-weight="500" text-anchor="middle">
+    Matriz diagnóstica antes de iniciar cualquier operación de despliegue
+  </text>
+
+  <line x1="200" y1="155" x2="430" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  <polygon points="450,150 457,155 450,160 443,155" fill="#FFB515"/>
+  <line x1="470" y1="155" x2="700" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  
+
+    <rect x="60" y="180" width="145" height="240" rx="10" fill="url(#cardGrad)" stroke="#FFB515" stroke-width="1.5"/>
+    <circle cx="132" cy="225" r="24" fill="#001a40" stroke="#FFB515" stroke-width="1.5"/>
+    <text x="132" y="233" fill="#FFB515" font-size="18" text-anchor="middle">1</text>
+    <text x="132" y="275" fill="#FFB515" font-size="16" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">¿QUIÉN?</text>
+    <text x="132" y="295" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">El Protegido</text>
+    <line x1="75" y1="308" x2="190" y2="308" stroke="rgba(255,255,255,0.1)"/>
+    <text x="132" y="328" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Grupo sanguíneo</text>
+    <text x="132" y="348" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Historial médico</text>
+    <text x="132" y="368" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Conflictos / Enemigos</text>
+    <text x="132" y="388" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Rasgos y hábitos</text>
+
+    <rect x="220" y="180" width="145" height="240" rx="10" fill="url(#cardGrad)" stroke="rgba(0,105,242,0.5)" stroke-width="1.5"/>
+    <circle cx="292" cy="225" r="24" fill="#001a40" stroke="#0069F2" stroke-width="1.5"/>
+    <text x="292" y="233" fill="#7FB3FF" font-size="18" text-anchor="middle">2</text>
+    <text x="292" y="275" fill="#7FB3FF" font-size="16" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">¿POR QUÉ?</text>
+    <text x="292" y="295" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">Causa y Motivo</text>
+    <line x1="235" y1="308" x2="350" y2="308" stroke="rgba(255,255,255,0.1)"/>
+    <text x="292" y="328" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Motivo del viaje</text>
+    <text x="292" y="348" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Nivel de exposición</text>
+    <text x="292" y="368" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Simbolismo público</text>
+    <text x="292" y="388" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Contexto social</text>
+
+    <rect x="380" y="180" width="145" height="240" rx="10" fill="url(#cardGrad)" stroke="rgba(0,105,242,0.5)" stroke-width="1.5"/>
+    <circle cx="452" cy="225" r="24" fill="#001a40" stroke="#0069F2" stroke-width="1.5"/>
+    <text x="452" y="233" fill="#7FB3FF" font-size="18" text-anchor="middle">3</text>
+    <text x="452" y="275" fill="#7FB3FF" font-size="16" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">¿CUÁNDO?</text>
+    <text x="452" y="295" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">Línea Temporal</text>
+    <line x1="395" y1="308" x2="510" y2="308" stroke="rgba(255,255,255,0.1)"/>
+    <text x="452" y="328" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Agenda oficial</text>
+    <text x="452" y="348" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Horarios de arribo</text>
+    <text x="452" y="368" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Rutinas predecibles</text>
+    <text x="452" y="388" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Tiempos muertos</text>
+
+    <rect x="540" y="180" width="145" height="240" rx="10" fill="url(#cardGrad)" stroke="rgba(0,105,242,0.5)" stroke-width="1.5"/>
+    <circle cx="612" cy="225" r="24" fill="#001a40" stroke="#0069F2" stroke-width="1.5"/>
+    <text x="612" y="233" fill="#7FB3FF" font-size="18" text-anchor="middle">4</text>
+    <text x="612" y="275" fill="#7FB3FF" font-size="16" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">¿DÓNDE?</text>
+    <text x="612" y="295" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">Escenario Físico</text>
+    <line x1="555" y1="308" x2="670" y2="308" stroke="rgba(255,255,255,0.1)"/>
+    <text x="612" y="328" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Emplazamiento</text>
+    <text x="612" y="348" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Rutas de acceso</text>
+    <text x="612" y="368" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Hospitales cercanos</text>
+    <text x="612" y="388" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Puntos vulnerables</text>
+
+    <rect x="700" y="180" width="145" height="240" rx="10" fill="url(#cardGrad)" stroke="#FFB515" stroke-width="1.5"/>
+    <circle cx="772" cy="225" r="24" fill="#001a40" stroke="#FFB515" stroke-width="1.5"/>
+    <text x="772" y="233" font-size="18" text-anchor="middle">5</text>
+    <text x="772" y="275" fill="#FFB515" font-size="16" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">¿CÓMO?</text>
+    <text x="772" y="295" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">Estructura Táctica</text>
+    <line x1="715" y1="308" x2="830" y2="308" stroke="rgba(255,255,255,0.1)"/>
+    <text x="772" y="328" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Nivel de protección</text>
+    <text x="772" y="348" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Recursos humanos</text>
+    <text x="772" y="368" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Armamento y EPP</text>
+    <text x="772" y="388" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Convoy y cápsula</text>
+
+    <rect x="180" y="450" width="540" height="40" rx="8" fill="rgba(0, 31, 72, 0.9)" stroke="#004DB3" stroke-width="1"/>
+    <text x="450" y="475" fill="#FFB515" font-size="13" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">
+      Actualización permanente: La situación del dignatario es dinámica y muta constantemente
+    </text>
+  </svg>

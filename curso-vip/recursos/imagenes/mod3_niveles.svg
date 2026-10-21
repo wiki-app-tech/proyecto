@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+    
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 50, 115, 0.9)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.9)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+    
+  <!-- Background -->
+  <rect width="900" height="520" fill="url(#bgGrad)"/>
+  <rect width="900" height="520" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="860" height="480" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="840" height="460" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 70 L 860 40 L 830 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 450 L 40 480 L 70 480" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 450 L 860 480 L 830 480" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header Badge -->
+  <rect x="230" y="45" width="440" height="30" rx="15" fill="rgba(0, 44, 102, 0.95)" stroke="#004DB3" stroke-width="1.5"/>
+  <text x="450" y="65" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2.5" text-anchor="middle">
+    POLICÍA DE TIERRA DEL FUEGO • DOCTRINA DE MANDO
+  </text>
+
+  <!-- Title & Subtitle -->
+  <text x="450" y="112" fill="#ffffff" font-size="24" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="0.5">
+    LOS CUATRO NIVELES DE LA PLANIFICACIÓN
+  </text>
+  <text x="450" y="138" fill="#7FB3FF" font-size="14" font-family="'Inter', sans-serif" font-weight="500" text-anchor="middle">
+    De la Visión Estratégica a la Acción Operativa en el Terreno
+  </text>
+
+  <line x1="200" y1="155" x2="430" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  <polygon points="450,150 457,155 450,160 443,155" fill="#FFB515"/>
+  <line x1="470" y1="155" x2="700" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  
+
+    <!-- 4 Pyramid Tiers (Stacked Cards) -->
+    <!-- Level 1: Estratégico -->
+    <polygon points="340,180 560,180 590,240 310,240" fill="url(#cardGrad)" stroke="#FFB515" stroke-width="2" filter="url(#glow)"/>
+    <text x="450" y="205" fill="#FFB515" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">1. NIVEL ESTRATÉGICO</text>
+    <text x="450" y="225" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">El "QUÉ": Objetivos institucionales superiores y política de Estado</text>
+
+    <!-- Level 2: Sinergético -->
+    <polygon points="305,245 595,245 625,305 275,305" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.8"/>
+    <text x="450" y="270" fill="#38bdf8" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">2. NIVEL SINERGÉTICO</text>
+    <text x="450" y="290" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">El "ENLACE": Directrices que coordinan áreas para un rendimiento superior</text>
+
+    <!-- Level 3: Táctico -->
+    <polygon points="270,310 630,310 660,370 240,370" fill="url(#cardGrad)" stroke="#a78bfa" stroke-width="1.8"/>
+    <text x="450" y="335" fill="#a78bfa" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">3. NIVEL TÁCTICO</text>
+    <text x="450" y="355" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">Las "NORMAS": Procedimientos operativos estandarizados (SOP) y manuales</text>
+
+    <!-- Level 4: Operativo -->
+    <polygon points="235,375 665,375 695,435 205,435" fill="url(#cardGrad)" stroke="#34d399" stroke-width="2"/>
+    <text x="450" y="400" fill="#34d399" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">4. NIVEL OPERATIVO</text>
+    <text x="450" y="420" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">La "ACCIÓN DIRECTA": Ejecución real en la cápsula, convoy y avanzadas</text>
+
+    <!-- Left side bracket / info -->
+    <text x="140" y="280" fill="#FFB515" font-size="12" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">DIRECCIÓN</text>
+    <text x="140" y="300" fill="#cbd5e1" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">Decisión Política</text>
+
+    <!-- Right side bracket / info -->
+    <text x="760" y="380" fill="#34d399" font-size="12" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">EJECUCIÓN</text>
+    <text x="760" y="400" fill="#cbd5e1" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">Despliegue Táctico</text>
+
+    <text x="450" y="470" fill="#7FB3FF" font-size="12" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">
+      "La cadena piramidal garantiza que ninguna acción táctica contradiga los fines del Estado"
+    </text>
+  </svg>

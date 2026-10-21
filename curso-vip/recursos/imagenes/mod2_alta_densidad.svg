@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+    
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 50, 115, 0.9)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.9)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+    
+  <!-- Background -->
+  <rect width="900" height="520" fill="url(#bgGrad)"/>
+  <rect width="900" height="520" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="860" height="480" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="840" height="460" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 70 L 860 40 L 830 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 450 L 40 480 L 70 480" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 450 L 860 480 L 830 480" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header Badge -->
+  <rect x="230" y="45" width="440" height="30" rx="15" fill="rgba(0, 44, 102, 0.95)" stroke="#004DB3" stroke-width="1.5"/>
+  <text x="450" y="65" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2.5" text-anchor="middle">
+    POLICÍA DE TIERRA DEL FUEGO • MULTITUDES Y CRISIS
+  </text>
+
+  <!-- Title & Subtitle -->
+  <text x="450" y="112" fill="#ffffff" font-size="24" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="0.5">
+    ENTORNOS DE ALTA DENSIDAD: CAJÓN Y CÍRCULO
+  </text>
+  <text x="450" y="138" fill="#7FB3FF" font-size="14" font-family="'Inter', sans-serif" font-weight="500" text-anchor="middle">
+    Geometría Rígida de Protección y Técnica de Reacción Extrema
+  </text>
+
+  <line x1="200" y1="155" x2="430" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  <polygon points="450,150 457,155 450,160 443,155" fill="#FFB515"/>
+  <line x1="470" y1="155" x2="700" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  
+
+    <!-- Left Box: Formación Cajón / Box -->
+    <rect x="60" y="180" width="370" height="290" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="60" y="180" width="370" height="40" rx="12" fill="#002C66"/>
+    <text x="245" y="206" fill="#38bdf8" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">FORMACIÓN CAJÓN / BOX (5 HOMBRES)</text>
+
+    <!-- Mini diagram of box -->
+    <rect x="175" y="240" width="140" height="110" rx="6" fill="rgba(0, 105, 242, 0.15)" stroke="#0069F2" stroke-width="2" stroke-dasharray="4 4"/>
+    <circle cx="245" cy="295" r="16" fill="#002C66" stroke="#FFB515" stroke-width="2"/>
+    <text x="245" y="300" fill="#FFB515" font-size="11" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">VIP</text>
+
+    <!-- 4 Corners + Rear -->
+    <circle cx="175" cy="240" r="12" fill="#001f48" stroke="#38bdf8" stroke-width="1.5"/><text x="175" y="244" fill="#fff" font-size="9" text-anchor="middle">C1</text>
+    <circle cx="315" cy="240" r="12" fill="#001f48" stroke="#38bdf8" stroke-width="1.5"/><text x="315" y="244" fill="#fff" font-size="9" text-anchor="middle">C2</text>
+    <circle cx="175" cy="350" r="12" fill="#001f48" stroke="#38bdf8" stroke-width="1.5"/><text x="175" y="354" fill="#fff" font-size="9" text-anchor="middle">C3</text>
+    <circle cx="315" cy="350" r="12" fill="#001f48" stroke="#38bdf8" stroke-width="1.5"/><text x="315" y="354" fill="#fff" font-size="9" text-anchor="middle">C4</text>
+    <circle cx="245" cy="365" r="12" fill="#001f48" stroke="#34d399" stroke-width="1.5"/><text x="245" y="369" fill="#fff" font-size="9" text-anchor="middle">JB</text>
+
+    <text x="245" y="405" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">Uso: Escenarios, Salones y Muchedumbres</text>
+    <text x="245" y="425" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Aísla físicamente al dignatario del público</text>
+    <text x="245" y="445" fill="#7FB3FF" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Pared humana rígida de avance controlado</text>
+
+    <!-- Right Box: Círculo Defensivo -->
+    <rect x="470" y="180" width="370" height="290" rx="12" fill="url(#cardGrad)" stroke="#f87171" stroke-width="2" filter="url(#glow)"/>
+    <rect x="470" y="180" width="370" height="40" rx="12" fill="#7f1d1d"/>
+    <text x="655" y="206" fill="#fca5a5" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">CÍRCULO DEFENSIVO (MÁXIMA EMERGENCIA)</text>
+
+    <!-- Mini diagram of circle -->
+    <circle cx="655" cy="295" r="60" fill="rgba(239, 68, 68, 0.15)" stroke="#ef4444" stroke-width="2" stroke-dasharray="4 4"/>
+    <circle cx="655" cy="295" r="16" fill="#002C66" stroke="#FFB515" stroke-width="2"/>
+    <text x="655" y="300" fill="#FFB515" font-size="11" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">VIP</text>
+
+    <!-- Entangled Custodians in circle -->
+    <circle cx="655" cy="235" r="12" fill="#7f1d1d" stroke="#fca5a5" stroke-width="1.5"/><text x="655" y="239" fill="#fff" font-size="9" text-anchor="middle">C1</text>
+    <circle cx="715" cy="295" r="12" fill="#7f1d1d" stroke="#fca5a5" stroke-width="1.5"/><text x="715" y="299" fill="#fff" font-size="9" text-anchor="middle">C2</text>
+    <circle cx="655" cy="355" r="12" fill="#7f1d1d" stroke="#fca5a5" stroke-width="1.5"/><text x="655" y="359" fill="#fff" font-size="9" text-anchor="middle">C3</text>
+    <circle cx="595" cy="295" r="12" fill="#7f1d1d" stroke="#fca5a5" stroke-width="1.5"/><text x="595" y="299" fill="#fff" font-size="9" text-anchor="middle">C4</text>
+
+    <text x="655" y="395" fill="#fca5a5" font-size="12" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">⚠️ Bloqueo y Extracción de Emergencia</text>
+    <text x="655" y="415" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Mano no dominante entrelazada en el cinto</text>
+    <text x="655" y="435" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Mano dominante libre y lista en el arma</text>
+    <text x="655" y="455" fill="#fca5a5" font-size="11" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">• El Jefe reduce la silueta del VIP agachándolo</text>
+  </svg>

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+    
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 50, 115, 0.9)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.9)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+    
+  <!-- Background -->
+  <rect width="900" height="500" fill="url(#bgGrad)"/>
+  <rect width="900" height="500" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="860" height="460" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="840" height="440" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 70 L 860 40 L 830 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 430 L 40 460 L 70 460" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 430 L 860 460 L 830 460" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header Badge -->
+  <rect x="230" y="45" width="440" height="30" rx="15" fill="rgba(0, 44, 102, 0.95)" stroke="#004DB3" stroke-width="1.5"/>
+  <text x="450" y="65" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2.5" text-anchor="middle">
+    POLICÍA DE TIERRA DEL FUEGO • REQUISA Y DESMINADO
+  </text>
+
+  <!-- Title & Subtitle -->
+  <text x="450" y="112" fill="#ffffff" font-size="24" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="0.5">
+    INSPECCIÓN TÉCNICA Y REGLA DE ADYACENCIA
+  </text>
+  <text x="450" y="138" fill="#7FB3FF" font-size="14" font-family="'Inter', sans-serif" font-weight="500" text-anchor="middle">
+    Barrido Tridimensional 360° en Sala VIP y Cuadrantes Superior/Inferior
+  </text>
+
+  <line x1="200" y1="155" x2="430" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  <polygon points="450,150 457,155 450,160 443,155" fill="#FFB515"/>
+  <line x1="470" y1="155" x2="700" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  
+
+    <!-- 3 Levels Building Scheme -->
+    <!-- Top Level -->
+    <rect x="250" y="180" width="400" height="65" rx="8" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="450" y="205" fill="#38bdf8" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">PISO SUPERIOR (TECHO ADYACENTE)</text>
+    <text x="450" y="228" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">Revisión de habitaciones, conductos y losa superior</text>
+
+    <!-- Arrow down -->
+    <path d="M 450 245 L 450 265" stroke="#FFB515" stroke-width="2.5" marker-end="url(#arrowGold)"/>
+
+    <!-- Middle Level: ZONA VIP -->
+    <rect x="230" y="265" width="440" height="90" rx="10" fill="url(#cardGrad)" stroke="#FFB515" stroke-width="2.5" filter="url(#glow)"/>
+    <text x="450" y="295" fill="#FFB515" font-size="15" font-family="'Outfit', sans-serif" font-weight="900" text-anchor="middle">
+      ★ ZONA VIP / SALÓN DEL ACTO ★
+    </text>
+    <text x="450" y="320" fill="#ffffff" font-size="12" font-family="'Inter', sans-serif" text-anchor="middle">
+      Revisión 360°: Paredes, cielorrasos, luminarias, estrado y mobiliario
+    </text>
+    <text x="450" y="340" fill="#34d399" font-size="11" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">
+      Precintado de seguridad post-requisa
+    </text>
+
+    <!-- Arrow down -->
+    <path d="M 450 355 L 450 375" stroke="#FFB515" stroke-width="2.5" marker-end="url(#arrowGold)"/>
+
+    <!-- Bottom Level -->
+    <rect x="250" y="375" width="400" height="65" rx="8" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="450" y="400" fill="#38bdf8" font-size="13" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">PISO INFERIOR (SÓTANO / COCHERA)</text>
+    <text x="450" y="423" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">Revisión de tableros eléctricos, cañerías y accesos de servicio</text>
+
+    <!-- Warning on finding -->
+    <rect x="700" y="240" width="160" height="130" rx="8" fill="#7f1d1d" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="780" y="265" fill="#ffffff" font-size="11" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">⚠️ ANTE HALLAZGO</text>
+    <text x="780" y="290" fill="#fca5a5" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">1. NO TOCAR</text>
+    <text x="780" y="310" fill="#fca5a5" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">2. Evacuar 100 m</text>
+    <text x="780" y="330" fill="#fca5a5" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">3. Llamar a Explosivos</text>
+    <text x="780" y="350" fill="#fca5a5" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">4. Sellar la zona</text>
+
+    <text x="450" y="475" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">
+      Regla de Oro: "No basta con revisar el salón; una carga en el techo o en el piso inferior es letal"
+    </text>
+  </svg>

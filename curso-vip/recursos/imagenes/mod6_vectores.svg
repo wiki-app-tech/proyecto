@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+    
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 50, 115, 0.9)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.9)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+    
+  <!-- Background -->
+  <rect width="900" height="500" fill="url(#bgGrad)"/>
+  <rect width="900" height="500" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="860" height="460" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="840" height="440" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 70 L 860 40 L 830 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 430 L 40 460 L 70 460" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 430 L 860 460 L 830 460" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header Badge -->
+  <rect x="230" y="45" width="440" height="30" rx="15" fill="rgba(0, 44, 102, 0.95)" stroke="#004DB3" stroke-width="1.5"/>
+  <text x="450" y="65" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2.5" text-anchor="middle">
+    POLICÍA DE TIERRA DEL FUEGO • VECTORES DE RIESGO
+  </text>
+
+  <!-- Title & Subtitle -->
+  <text x="450" y="112" fill="#ffffff" font-size="24" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="0.5">
+    INTELIGENCIA DE AMENAZA: VECTORES DE TRANSMISIÓN
+  </text>
+  <text x="450" y="138" fill="#7FB3FF" font-size="14" font-family="'Inter', sans-serif" font-weight="500" text-anchor="middle">
+    Los Tres Escenarios Críticos de Contagio en Operaciones de Custodia
+  </text>
+
+  <line x1="200" y1="155" x2="430" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  <polygon points="450,150 457,155 450,160 443,155" fill="#FFB515"/>
+  <line x1="470" y1="155" x2="700" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  
+
+    <!-- 3 Cards -->
+    <rect x="60" y="190" width="230" height="235" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="175" cy="245" r="26" fill="#001f48" stroke="#38bdf8" stroke-width="2"/>
+    <text x="175" y="253" font-size="22" text-anchor="middle">🌬️</text>
+    <text x="175" y="295" fill="#38bdf8" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">1. AEROSOLES</text>
+    <text x="175" y="325" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">Espacios Confinados</text>
+    <text x="175" y="350" fill="#cbd5e1" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">• Habitáculo del Móvil A</text>
+    <text x="175" y="370" fill="#cbd5e1" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">• Ascensores y pasillos sin aire</text>
+    <text x="175" y="390" fill="#cbd5e1" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">• Salones de reunión cerrados</text>
+    <text x="175" y="410" fill="#38bdf8" font-size="10" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">Uso obligatorio N95</text>
+
+    <rect x="335" y="190" width="230" height="235" rx="12" fill="url(#cardGrad)" stroke="#FFB515" stroke-width="2" filter="url(#glow)"/>
+    <circle cx="450" cy="245" r="26" fill="#002C66" stroke="#FFB515" stroke-width="2"/>
+    <text x="450" y="253" font-size="22" text-anchor="middle">🚗</text>
+    <text x="450" y="295" fill="#FFB515" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">2. FÓMITES / SUP.</text>
+    <text x="450" y="325" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">Puntos de Contacto</text>
+    <text x="450" y="350" fill="#cbd5e1" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">• Manijas de puertas y volantes</text>
+    <text x="450" y="370" fill="#cbd5e1" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">• Consolas VHF/UHF y micrófonos</text>
+    <text x="450" y="390" fill="#cbd5e1" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">• Cinturones de seguridad</text>
+    <text x="450" y="410" fill="#FFB515" font-size="10" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">Two-Step Method c/2h</text>
+
+    <rect x="610" y="190" width="230" height="235" rx="12" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="2"/>
+    <circle cx="725" cy="245" r="26" fill="#7f1d1d" stroke="#ef4444" stroke-width="2"/>
+    <text x="725" y="253" font-size="22" text-anchor="middle">🤝</text>
+    <text x="725" y="295" fill="#ef4444" font-size="14" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">3. CONTACTO DIRECTO</text>
+    <text x="725" y="325" fill="#ffffff" font-size="11" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">Multitudes y Baños de Masa</text>
+    <text x="725" y="350" fill="#cbd5e1" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">• Saludos de mano no filtrados</text>
+    <text x="725" y="370" fill="#cbd5e1" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">• Entrega de cartas / paquetes</text>
+    <text x="725" y="390" fill="#cbd5e1" font-size="10" font-family="'Inter', sans-serif" text-anchor="middle">• Ausencia de anillo de valla</text>
+    <text x="725" y="410" fill="#fca5a5" font-size="10" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">Guantes y filtro previo</text>
+
+    <text x="450" y="465" fill="#cbd5e1" font-size="12" font-family="'Inter', sans-serif" text-anchor="middle">
+      "El custodio vigila no solo armas de fuego, sino también los vectores microscópicos de agresión"
+    </text>
+  </svg>

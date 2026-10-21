@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
+    
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001433"/>
+      <stop offset="35%" stop-color="#002C66"/>
+      <stop offset="70%" stop-color="#003273"/>
+      <stop offset="100%" stop-color="#001a40"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#FFB515"/>
+      <stop offset="100%" stop-color="#C28600"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0069F2"/>
+      <stop offset="100%" stop-color="#004DB3"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(0, 50, 115, 0.9)"/>
+      <stop offset="100%" stop-color="rgba(0, 26, 64, 0.9)"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 105, 242, 0.12)" stroke-width="1"/>
+    </pattern>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#FFB515" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0069F2" />
+    </marker>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+    
+  <!-- Background -->
+  <rect width="900" height="540" fill="url(#bgGrad)"/>
+  <rect width="900" height="540" fill="url(#grid)"/>
+
+  <!-- Tactical Borders -->
+  <rect x="20" y="20" width="860" height="500" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.85"/>
+  <rect x="30" y="30" width="840" height="480" rx="12" fill="none" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 70 L 860 40 L 830 40" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 40 470 L 40 500 L 70 500" fill="none" stroke="#FFB515" stroke-width="3"/>
+  <path d="M 860 470 L 860 500 L 830 500" fill="none" stroke="#FFB515" stroke-width="3"/>
+
+  <!-- Header Badge -->
+  <rect x="230" y="45" width="440" height="30" rx="15" fill="rgba(0, 44, 102, 0.95)" stroke="#004DB3" stroke-width="1.5"/>
+  <text x="450" y="65" fill="#FFB515" font-size="12" font-family="'Inter', sans-serif" font-weight="700" letter-spacing="2.5" text-anchor="middle">
+    POLICÍA DE TIERRA DEL FUEGO • TÉCNICAS Y TÁCTICAS
+  </text>
+
+  <!-- Title & Subtitle -->
+  <text x="450" y="112" fill="#ffffff" font-size="24" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle" letter-spacing="0.5">
+    ANATOMÍA DE LA UNIDAD DE PROTECCIÓN
+  </text>
+  <text x="450" y="138" fill="#7FB3FF" font-size="14" font-family="'Inter', sans-serif" font-weight="500" text-anchor="middle">
+    Los Cuatro Pilares Operativos de la Custodia de Dignatarios
+  </text>
+
+  <line x1="200" y1="155" x2="430" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  <polygon points="450,150 457,155 450,160 443,155" fill="#FFB515"/>
+  <line x1="470" y1="155" x2="700" y2="155" stroke="rgba(0, 105, 242, 0.4)" stroke-width="1.5"/>
+  
+
+    <!-- 4 Columns/Cards -->
+    <!-- Col 1: Grupo de Protección -->
+    <rect x="50" y="190" width="180" height="270" rx="12" fill="url(#cardGrad)" stroke="#FFB515" stroke-width="2" filter="url(#glow)"/>
+    <rect x="50" y="190" width="180" height="40" rx="12" fill="#002C66"/>
+    <text x="140" y="215" fill="#FFB515" font-size="12" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">GRUPO PROTECCIÓN</text>
+    <circle cx="140" cy="270" r="28" fill="#001f48" stroke="#FFB515" stroke-width="2"/>
+    <text x="140" y="280" font-size="24" text-anchor="middle">🛡️</text>
+    <text x="140" y="325" fill="#ffffff" font-size="14" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">Cápsula Inmediata</text>
+    <text x="140" y="350" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Escudo físico directo</text>
+    <text x="140" y="370" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Contacto 24/7 con VIP</text>
+    <text x="140" y="390" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Extracción inmediata</text>
+    <text x="140" y="430" fill="#FFB515" font-size="11" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">NÚCLEO Y ESCOLTA</text>
+
+    <!-- Col 2: Oficina de Operaciones -->
+    <rect x="250" y="190" width="180" height="270" rx="12" fill="url(#cardGrad)" stroke="rgba(0, 105, 242, 0.5)" stroke-width="1.5"/>
+    <rect x="250" y="190" width="180" height="40" rx="12" fill="#001f48"/>
+    <text x="340" y="215" fill="#7FB3FF" font-size="12" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">OF. OPERACIONES</text>
+    <circle cx="340" cy="270" r="28" fill="#001433" stroke="#0069F2" stroke-width="2"/>
+    <text x="340" y="280" font-size="24" text-anchor="middle">🎯</text>
+    <text x="340" y="325" fill="#ffffff" font-size="14" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">Inteligencia y RECCE</text>
+    <text x="340" y="350" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Análisis de amenazas</text>
+    <text x="340" y="370" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Planificación de rutas</text>
+    <text x="340" y="390" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Enlace protocolar</text>
+    <text x="340" y="430" fill="#7FB3FF" font-size="11" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">AVANZADA Y LOGÍSTICA</text>
+
+    <!-- Col 3: Base de Comunicaciones -->
+    <rect x="450" y="190" width="180" height="270" rx="12" fill="url(#cardGrad)" stroke="rgba(0, 105, 242, 0.5)" stroke-width="1.5"/>
+    <rect x="450" y="190" width="180" height="40" rx="12" fill="#001f48"/>
+    <text x="540" y="215" fill="#7FB3FF" font-size="12" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">COMUNICACIONES</text>
+    <circle cx="540" cy="270" r="28" fill="#001433" stroke="#0069F2" stroke-width="2"/>
+    <text x="540" y="280" font-size="24" text-anchor="middle">📡</text>
+    <text x="540" y="325" fill="#ffffff" font-size="14" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">Comando y C4I</text>
+    <text x="540" y="350" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Monitoreo en tiempo real</text>
+    <text x="540" y="370" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Frecuencia encriptada</text>
+    <text x="540" y="390" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Rastreo GPS y alerta</text>
+    <text x="540" y="430" fill="#7FB3FF" font-size="11" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">BASE CENTRAL 24 HS</text>
+
+    <!-- Col 4: GAT -->
+    <rect x="650" y="190" width="200" height="270" rx="12" fill="url(#cardGrad)" stroke="#34d399" stroke-width="2"/>
+    <rect x="650" y="190" width="200" height="40" rx="12" fill="#002C66"/>
+    <text x="750" y="215" fill="#34d399" font-size="12" font-family="'Outfit', sans-serif" font-weight="800" text-anchor="middle">APOYO TÁCTICO (G.A.T.)</text>
+    <circle cx="750" cy="270" r="28" fill="#001f48" stroke="#34d399" stroke-width="2"/>
+    <text x="750" y="280" font-size="24" text-anchor="middle">⚔️</text>
+    <text x="750" y="325" fill="#ffffff" font-size="14" font-family="'Outfit', sans-serif" font-weight="700" text-anchor="middle">Fuerza de Neutralización</text>
+    <text x="750" y="350" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Fuego de cobertura</text>
+    <text x="750" y="370" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Rompimiento de emboscada</text>
+    <text x="750" y="390" fill="#cbd5e1" font-size="11" font-family="'Inter', sans-serif" text-anchor="middle">• Rescate y contención</text>
+    <text x="750" y="430" fill="#34d399" font-size="11" font-family="'Inter', sans-serif" font-weight="700" text-anchor="middle">REACCIÓN EXTERIOR</text>
+
+    <!-- Footer bar -->
+    <rect x="100" y="480" width="700" height="32" rx="8" fill="rgba(0, 31, 72, 0.7)" stroke="#004DB3" stroke-width="1"/>
+    <text x="450" y="501" fill="#cbd5e1" font-size="12" font-family="'Inter', sans-serif" font-weight="600" text-anchor="middle">
+      Principio Operativo: "Sinergia Total — Acción Coordinada y Reacción Instantánea"
+    </text>
+  </svg>
