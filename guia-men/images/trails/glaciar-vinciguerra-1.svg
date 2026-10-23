@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vinSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="60%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+    <linearGradient id="vinWater" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#075985" />
+    </linearGradient>
+    <linearGradient id="icebergGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#bae6fd" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#vinSky)" />
+  <!-- Vinciguerra mountain massif & glacier tongue -->
+  <polygon points="0,280 180,140 320,200 480,90 640,190 800,120 800,500 0,500" fill="#334155" />
+  <!-- Glaciar Vinciguerra tongue descending -->
+  <polygon points="360,180 480,110 580,210 520,300 410,290" fill="#e2e8f0" />
+  <polygon points="410,290 520,300 500,320 400,315" fill="#38bdf8" />
+  <!-- Laguna de los Témpanos water -->
+  <polygon points="0,320 800,310 800,470 0,480" fill="url(#vinWater)" />
+  <!-- Floating Icebergs (Témpanos en deriva) -->
+  <polygon points="220,360 250,335 280,365 240,375" fill="url(#icebergGrad)" />
+  <polygon points="460,375 490,345 530,380 480,390" fill="url(#icebergGrad)" />
+  <polygon points="620,350 645,330 670,355 635,362" fill="url(#icebergGrad)" />
+  <!-- Rocky moraine shoreline in foreground -->
+  <polygon points="0,450 300,430 550,440 800,420 800,500 0,500" fill="#1e293b" />
+  <text x="30" y="475" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">GLACIAR VINCIGUERRA Y LAGUNA DE LOS TÉMPANOS · SITIO RAMSAR (730 msnm)</text>
+</svg>

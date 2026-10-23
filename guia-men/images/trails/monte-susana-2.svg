@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pipoSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a3d45" />
+      <stop offset="100%" stop-color="#7a9a95" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#pipoSky)" />
+  <!-- Pipo Valley and mixed evergreen beech forest (Guindo y Lenga) -->
+  <polygon points="0,200 350,140 700,210 800,180 800,500 0,500" fill="#183028" />
+  <g fill="#0e201b">
+    <polygon points="120,400 140,240 160,400" />
+    <polygon points="280,380 300,220 320,380" />
+    <polygon points="460,410 480,250 500,410" />
+    <polygon points="620,390 640,230 660,390" />
+  </g>
+  <!-- Trail with tree roots and earth -->
+  <path d="M400,500 Q430,420 390,340 T440,260" stroke="#d4a373" stroke-width="12" fill="none" opacity="0.8" />
+  <text x="30" y="475" fill="#f4f1de" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">SENDERO BOSCOSO Y ASCENSO DESDE EL VALLE DEL RÍO PIPO</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="albinoSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b192c" />
+      <stop offset="50%" stop-color="#1e3e62" />
+      <stop offset="100%" stop-color="#4e6e8e" />
+    </linearGradient>
+    <linearGradient id="iceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0fbfc" />
+      <stop offset="40%" stop-color="#98c1d9" />
+      <stop offset="100%" stop-color="#3d5a80" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#albinoSky)" />
+  <!-- Sharp jagged peaks of Sierra Alvear -->
+  <polygon points="0,260 160,80 260,180 430,40 560,160 700,70 800,180 800,500 0,500" fill="#1c2430" />
+  <!-- Glacial Ice Sheet of Ojo del Albino hanging cirque -->
+  <polygon points="180,180 430,70 650,150 580,290 240,280" fill="url(#iceGrad)" />
+  <!-- Ice crevasses (grietas glaciares) -->
+  <path d="M280,210 Q320,230 360,205" stroke="#102b46" stroke-width="4" fill="none" />
+  <path d="M420,180 Q470,220 520,195" stroke="#102b46" stroke-width="5" fill="none" />
+  <path d="M340,240 Q400,260 490,235" stroke="#102b46" stroke-width="3" fill="none" />
+  <!-- Steep Scree & Erratic Boulders (Pedrero de derrubios) -->
+  <polygon points="0,380 180,260 480,280 800,240 800,500 0,500" fill="#2d3748" />
+  <polygon points="40,430 80,390 120,440" fill="#4a5568" />
+  <polygon points="260,400 310,360 350,420" fill="#394454" />
+  <polygon points="520,380 570,330 630,400" fill="#4a5568" />
+  <polygon points="680,440 730,390 770,450" fill="#394454" />
+  <!-- Mountain Climber Silhouette with Helmet and Poles -->
+  <circle cx="410" cy="330" r="8" fill="#e63946" /> <!-- Helmet -->
+  <path d="M410,338 L410,365 L402,390 M410,365 L418,390" stroke="#f1faee" stroke-width="4" fill="none" />
+  <line x1="395" y1="350" x2="385" y2="395" stroke="#fca311" stroke-width="2.5" />
+  <line x1="425" y1="350" x2="435" y2="395" stroke="#fca311" stroke-width="2.5" />
+  <!-- Safety Banner Overlay -->
+  <rect x="20" y="445" width="760" height="40" rx="6" fill="#0b192c" opacity="0.9" stroke="#e63946" stroke-width="1.5" />
+  <text x="40" y="470" fill="#ff4d4d" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" letter-spacing="1">ALTA MONTAÑA · GLACIAR OJO DEL ALBINO (980 msnm) · USO OBLIGATORIO DE CASCO Y CRAMPONES</text>
+</svg>

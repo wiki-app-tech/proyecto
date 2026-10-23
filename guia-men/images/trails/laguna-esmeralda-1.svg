@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="leSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b2a4a" />
+      <stop offset="60%" stop-color="#496580" />
+      <stop offset="100%" stop-color="#8ba7b8" />
+    </linearGradient>
+    <linearGradient id="leWater" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a9d8f" />
+      <stop offset="50%" stop-color="#52b788" />
+      <stop offset="100%" stop-color="#1b4332" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#leSky)" />
+  <!-- Sierra Alvear background peaks -->
+  <polygon points="0,300 120,180 220,240 380,120 480,210 600,100 720,220 800,170 800,500 0,500" fill="#2d3748" />
+  <!-- Snow caps -->
+  <polygon points="380,120 340,165 420,165" fill="#f7fafc" />
+  <polygon points="600,100 560,150 640,145" fill="#f7fafc" />
+  <polygon points="120,180 90,210 150,210" fill="#edf2f7" opacity="0.8" />
+  <!-- Forest hills -->
+  <polygon points="0,360 180,290 380,330 560,280 800,320 800,500 0,500" fill="#1b4332" />
+  <!-- Laguna Esmeralda emerald waters -->
+  <polygon points="60,380 400,360 740,380 780,480 20,480" fill="url(#leWater)" />
+  <!-- Water reflections and ripples -->
+  <ellipse cx="400" cy="420" rx="280" ry="25" fill="#74c69d" opacity="0.4" />
+  <ellipse cx="380" cy="445" rx="200" ry="15" fill="#95d5b2" opacity="0.3" />
+  <!-- Peat shore & stones -->
+  <polygon points="0,460 220,440 500,450 800,430 800,500 0,500" fill="#4a3525" opacity="0.9" />
+  <text x="30" y="480" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" letter-spacing="1">LAGUNA ESMERALDA · VALLE TIERRA MAYOR (440 msnm)</text>
+</svg>

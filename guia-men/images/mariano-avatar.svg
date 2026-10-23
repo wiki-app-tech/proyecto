@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b2a4a" />
+      <stop offset="50%" stop-color="#14213d" />
+      <stop offset="100%" stop-color="#0c1821" />
+    </linearGradient>
+    <linearGradient id="crestGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#95d5b2" />
+      <stop offset="100%" stop-color="#2a6f97" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle with Fine Double Border -->
+  <circle cx="200" cy="200" r="195" fill="url(#avatarBg)" stroke="#324b6d" stroke-width="4" />
+  <circle cx="200" cy="200" r="185" fill="none" stroke="#2a6f97" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6" />
+
+  <!-- Mountain Silhouette in Background -->
+  <polygon points="60,280 150,170 210,230 280,140 350,280" fill="#24334a" />
+  <polygon points="280,140 260,170 300,170" fill="#e8f4f8" opacity="0.85" />
+  <polygon points="150,170 135,195 165,195" fill="#e8f4f8" opacity="0.8" />
+
+  <!-- Guide Profile Silhouette (Stylized Mountain Guide with Beanie & Technical Anorak) -->
+  <path d="M140,380 C140,310 160,280 200,280 C240,280 260,310 260,380 Z" fill="#2c3e50" stroke="#1f2a38" stroke-width="2" />
+  <!-- Anorak High Collar & Zipper -->
+  <path d="M185,280 L200,320 L215,280" stroke="#fca311" stroke-width="3" fill="none" />
+
+  <!-- Head with Technical Beanie (Gorro de montaña) -->
+  <ellipse cx="200" cy="220" rx="42" ry="48" fill="#d4a373" />
+  <!-- Beanie Cap (Gorro) -->
+  <path d="M156,215 C156,170 170,150 200,150 C230,150 244,170 244,215 C244,222 156,222 156,215 Z" fill="#1b4965" />
+  <rect x="154" y="212" width="92" height="12" rx="4" fill="#003554" />
+
+  <!-- Sunglasses / Gafas de Montaña de protección UV -->
+  <rect x="175" y="210" width="22" height="14" rx="4" fill="#111111" stroke="#fca311" stroke-width="1.5" />
+  <rect x="203" y="210" width="22" height="14" rx="4" fill="#111111" stroke="#fca311" stroke-width="1.5" />
+  <line x1="197" y1="216" x2="203" y2="216" stroke="#fca311" stroke-width="2" />
+
+  <!-- Guide Badge / Compass Emblem -->
+  <circle cx="200" cy="355" r="22" fill="#0c1821" stroke="#fca311" stroke-width="2" />
+  <polygon points="200,340 205,355 200,370 195,355" fill="#e63946" />
+  <polygon points="185,355 200,350 215,355 200,360" fill="#f1faee" />
+</svg>
