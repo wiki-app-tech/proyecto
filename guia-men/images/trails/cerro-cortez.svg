@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cortezSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f2b38" />
+      <stop offset="45%" stop-color="#2d556e" />
+      <stop offset="85%" stop-color="#8baec4" />
+      <stop offset="100%" stop-color="#d4e3eb" />
+    </linearGradient>
+    <linearGradient id="beagleCortez" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16324f" />
+      <stop offset="100%" stop-color="#09182b" />
+    </linearGradient>
+    <linearGradient id="lengaForest" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b4332" />
+      <stop offset="100%" stop-color="#0d281e" />
+    </linearGradient>
+    <linearGradient id="rockSummit" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6c757d" />
+      <stop offset="100%" stop-color="#343a40" />
+    </linearGradient>
+  </defs>
+
+  <!-- Cielo Austral -->
+  <rect width="800" height="500" fill="url(#cortezSky)" />
+
+  <!-- Siluetas distantes de los Andes Fueguinos (Monte Olivia y Cinco Hermanos al fondo) -->
+  <polygon points="520,280 620,130 680,210 740,160 800,240 800,380 480,380" fill="#203345" opacity="0.85" />
+  <polygon points="590,140 620,130 635,160 610,175" fill="#e9ecef" opacity="0.6" />
+  <polygon points="725,170 740,160 755,185 735,195" fill="#e9ecef" opacity="0.5" />
+
+  <!-- Cordón Martial y Valle de Andorra hacia el noroeste -->
+  <polygon points="0,290 120,210 260,250 420,180 560,290 560,390 0,390" fill="#2a4158" opacity="0.9" />
+
+  <!-- Espejo del Canal Beagle en el horizonte sur -->
+  <polygon points="280,310 800,295 800,375 240,380" fill="url(#beagleCortez)" />
+  <line x1="300" y1="315" x2="800" y2="305" stroke="#f1faee" stroke-width="1.2" opacity="0.35" />
+
+  <!-- Bosque de lengas en media ladera (camino de ascenso) -->
+  <polygon points="0,380 280,340 520,380 800,350 800,500 0,500" fill="url(#lengaForest)" />
+
+  <!-- Cumbre rocosa del Cerro Cortez (750 msnm) y filo superior -->
+  <polygon points="0,480 180,380 340,310 460,370 680,450 800,430 800,500 0,500" fill="url(#rockSummit)" />
+  <polygon points="260,350 340,310 390,345 320,365" fill="#495057" />
+
+  <!-- Hito / Apacheta de cumbre -->
+  <rect x="335" y="298" width="10" height="13" rx="1.5" fill="#adb5bd" />
+  <rect x="331" y="293" width="18" height="6" rx="1" fill="#ced4da" />
+
+  <!-- Cóndor andino planeando en la térmica de cumbre -->
+  <path d="M420,160 Q440,145 460,160 Q450,152 440,154 Q430,152 420,160 Z" fill="#14213d" />
+  <circle cx="440" cy="154" r="1.5" fill="#f8f9fa" />
+
+  <!-- Tipografía cartográfica editorial -->
+  <rect x="24" y="445" width="460" height="34" rx="6" fill="rgba(15, 61, 46, 0.85)" stroke="rgba(127, 209, 174, 0.3)" stroke-width="1" />
+  <text x="36" y="467" fill="#ffffff" font-family="'Montserrat', system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="0.04em">
+    CERRO CORTEZ (750 msnm) · MIRADOR AL VALLE DE ANDORRA Y CANAL BEAGLE
+  </text>
+</svg>
+

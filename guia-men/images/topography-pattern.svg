@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" fill="none">
+  <!-- Topographic Contour Lines Pattern (Tierra del Fuego Glacial Ridges) -->
+  <g stroke="currentColor" stroke-width="1.2" opacity="0.45" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Ridge 1: Peak & concentric contours -->
+    <path d="M 300,120 C 330,110 360,130 380,160 C 400,190 380,230 350,250 C 310,270 260,260 230,230 C 200,200 210,160 240,135 C 265,115 285,125 300,120 Z" />
+    <path d="M 300,90 C 350,80 395,110 420,150 C 450,200 420,260 380,285 C 330,315 260,300 210,260 C 170,220 180,160 220,120 C 255,90 280,95 300,90 Z" />
+    <path d="M 300,60 C 370,50 430,90 460,140 C 495,200 470,280 415,315 C 355,355 265,335 200,290 C 145,240 150,160 200,105 C 245,65 275,65 300,60 Z" />
+    <path d="M 300,30 C 390,20 465,70 500,130 C 540,200 520,300 450,345 C 380,395 270,370 190,320 C 120,260 120,160 180,90 C 235,40 270,35 300,30 Z" />
+    <path d="M 300,5 C 410,-5 500,50 540,120 C 585,200 570,320 485,375 C 405,435 275,405 180,350 C 95,280 90,160 160,75 C 225,15 265,10 300,5 Z" />
+
+    <!-- Ridge 2: Lower valley & ascending pass -->
+    <path d="M -50,450 C 50,420 150,480 250,450 C 350,420 450,480 550,450 C 650,420 700,460 750,470" />
+    <path d="M -50,480 C 50,450 150,510 250,480 C 350,450 450,510 550,480 C 650,450 700,490 750,500" />
+    <path d="M -50,510 C 50,480 150,540 250,510 C 350,480 450,540 550,510 C 650,480 700,520 750,530" />
+    <path d="M -50,540 C 50,510 150,570 250,540 C 350,510 450,570 550,540 C 650,510 700,550 750,560" />
+    <path d="M -50,570 C 50,540 150,600 250,570 C 350,540 450,600 550,570 C 650,540 700,580 750,590" />
+
+    <!-- Glacial Cirque curves -->
+    <path d="M 450,400 C 520,380 570,440 590,520 C 600,560 560,600 500,590 C 440,580 410,510 420,460 C 430,420 440,405 450,400 Z" stroke-dasharray="8 4" />
+    <path d="M 460,420 C 510,405 550,450 565,510 C 570,540 540,570 490,565 C 450,555 430,500 440,465 C 445,435 455,425 460,420 Z" />
+
+    <!-- Index Contours with subtle elevation labels -->
+    <text x="310" y="85" font-family="monospace" font-size="9" fill="currentColor" opacity="0.6" letter-spacing="1">800 m</text>
+    <text x="360" y="260" font-family="monospace" font-size="9" fill="currentColor" opacity="0.6" letter-spacing="1">650 m</text>
+    <text x="425" y="325" font-family="monospace" font-size="9" fill="currentColor" opacity="0.6" letter-spacing="1">500 m</text>
+    <text x="210" y="505" font-family="monospace" font-size="9" fill="currentColor" opacity="0.6" letter-spacing="1">350 m</text>
+  </g>
+</svg>
+
